@@ -21,5 +21,5 @@ python -m unittest discover -s tests -v
 저장소 이름을 `abo-data`로 만들고 Pages의 배포 원본을 GitHub Actions로 지정하면 다음 주소를 사용합니다.
 
 ```text
-https://OWNER.github.io/abo-data/data/briefing.json
+https://chakhan82.github.io/abo-data/data/briefing.json
 ```
