@@ -45,6 +45,20 @@ NEWS_QUERIES = {
     "스포츠": "한국 (스포츠 OR 야구 OR 축구 OR 배구 OR 농구 OR 경기)",
 }
 
+SCHEDULE_QUERIES = {
+    "사회": "한국 (사회 OR 안전 OR 복지 OR 행사) (예정 OR 개최 OR 시행 OR 발표 OR 회의 OR 설명회)",
+    "경제": "한국 (경제 OR 물가 OR 고용 OR 수출 OR 금리) (발표 OR 공표 OR 회의 OR 일정)",
+    "산업": "한국 (산업 OR 기업 OR 반도체 OR 자동차 OR 배터리) (발표 OR 출시 OR 개최 OR 예정 OR 일정)",
+    "증권": "국내 (증시 OR 주식 OR 상장 OR 공모주 OR 실적) (예정 OR 발표 OR 거래 OR 공시 OR 일정)",
+    "부동산": "한국 (부동산 OR 청약 OR 분양 OR 공급 OR 주택) (예정 OR 발표 OR 접수 OR 시행 OR 일정)",
+    "과학·기술": "한국 (과학 OR 기술 OR AI OR 우주 OR 연구) (발표 OR 공개 OR 발사 OR 개최 OR 일정)",
+    "교육": "한국 (교육 OR 학교 OR 대학 OR 입시 OR 수능) (발표 OR 접수 OR 시행 OR 설명회 OR 일정)",
+    "국제": "(국제 OR 미국 OR 중국 OR 일본 OR 유럽) (정상회담 OR 회의 OR 선거 OR 발표 OR 일정)",
+    "정치": "한국 (국회 OR 정부 OR 대통령 OR 선거 OR 법안) (회의 OR 표결 OR 발표 OR 예정 OR 일정)",
+    "문화": "한국 (문화 OR 공연 OR 전시 OR 영화 OR 축제) (개막 OR 개봉 OR 개최 OR 공개 OR 일정)",
+    "스포츠": "한국 (스포츠 OR 야구 OR 축구 OR 농구 OR 배구 OR 골프) (경기 OR 개막 OR 개최 OR 일정)",
+}
+
 CATEGORY_KEYWORDS = {
     "사회": (
         "사회",
@@ -444,10 +458,24 @@ def _deduplicate(items: Iterable[dict[str, object]]) -> list[dict[str, object]]:
 
 
 def _find_event_time(
-    title: str, published_at: datetime, now: datetime
+    title: str,
+    published_at: datetime,
+    now: datetime,
+    *,
+    allow_bare_day: bool = False,
 ) -> tuple[datetime, bool] | None:
     date_value: datetime | None = None
-    absolute = re.search(r"(?:(20\d{2})년\s*)?(\d{1,2})월\s*(\d{1,2})일", title)
+    absolute_matches = list(
+        re.finditer(r"(?:(20\d{2})년\s*)?(\d{1,2})월\s*(\d{1,2})일", title)
+    )
+    if "취소" in title and len(absolute_matches) <= 1:
+        return None
+    absolute = (
+        absolute_matches[-1]
+        if len(absolute_matches) > 1
+        and any(keyword in title for keyword in ("변경", "연기", "→"))
+        else (absolute_matches[0] if absolute_matches else None)
+    )
     if absolute:
         year = int(absolute.group(1) or now.year)
         date_value = datetime(
@@ -478,44 +506,51 @@ def _find_event_time(
                 date_value = datetime(year, month, day, tzinfo=SEOUL)
             except ValueError:
                 return None
-
-    if date_value is None:
-        return None
-
-    time_match = re.search(r"(?:(오전|오후)\s*)?(\d{1,2})시(?:\s*(\d{1,2})분)?", title)
-    time_confirmed = time_match is not None
-    if time_match:
-        hour = int(time_match.group(2))
-        minute = int(time_match.group(3) or 0)
-        if time_match.group(1) == "오후" and hour < 12:
-            hour += 12
-        if time_match.group(1) == "오전" and hour == 12:
-            hour = 0
-        date_value = date_value.replace(hour=hour, minute=minute)
-    else:
-        date_value = date_value.replace(hour=12, minute=0)
-
-    if date_value < now or date_value > now + timedelta(days=7):
-        return None
-    return date_value, time_confirmed
-
-
-def _table_rows(document: str) -> list[list[str]]:
-    rows: list[list[str]] = []
-    for raw_row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", document, flags=re.I | re.S):
-        cells = [
-            _clean_html(cell)
-            for cell in re.findall(
-                r"<t[dh]\b[^>]*>(.*?)</t[dh]>", raw_row, flags=re.I | re.S
+        elif allow_bare_day or any(
+            keyword in title
+            for keyword in (
+                "예정",
+                "일정",
+                "개최",
+                "시행",
+                "발표",
+                "공표",
+                "회의",
+                "표결",
+                "설명회",
+                "접수",
+                "개막",
+                "개봉",
+                "공개",
+                "발사",
+                "경기",
+                "출시",
+                "정상회담",
+                "선거",
             )
-        ]
-        if cells:
-            rows.append(cells)
-    return rows
-
-
-def parse_kostat_schedules(document: str, year: int) -> list[tuple[datetime, str]]:
-    result: list[tuple[datetime, str]] = []
+        ):
+            day_only = re.search(r"(?<!\d)(\d{1,2})일(?!\d)", title)
+            if day_only and re.match(
+                r"\s*(?:연속|째|간|이하|이상|만에)", title[day_only.end() :]
+            ):
+                day_only = None
+            if day_only:
+                day = int(day_only.group(1))
+                year, month = published_at.year, published_at.month
+                for month_offset in (0, 1):
+                    if month_offset == 1 and now - published_at > timedelta(days=14):
+                        continue
+                    candidate_month = month + month_offset
+                    candidate_year = year
+                    if candidate_month == 13:
+                        candidate_year += 1
+                        candidate_month = 1
+                    try:
+                        candidate = datetime(
+                            candidate_year,
+                            candidate_month,
+                            day,
+           …385 tokens truncated… str]] = []
     for cells in _table_rows(document):
         if len(cells) < 3:
             continue
@@ -744,18 +779,24 @@ def build_feed(
         briefings.extend(combined)
 
     upcoming: list[dict[str, object]] = []
-    schedule_queries = (
-        "(사회 OR 교육 OR 정치 OR 부동산) (예정 OR 개최 OR 발표 OR 회의 OR 설명회) when:7d",
-        "(경제 OR 산업 OR 증권) (실적 OR 통계 OR 발표 OR 일정 OR 상장) when:7d",
-        "(과학 OR 기술 OR 국제 OR 문화 OR 스포츠) (개최 OR 개막 OR 발표 OR 경기) when:7d",
+    future_date_terms = " OR ".join(
+        f'"{moment.month}월 {moment.day}일" OR "{moment.day}일"'
+        for moment in (generated_at + timedelta(days=offset) for offset in range(1, 8))
     )
-    for index, query in enumerate(schedule_queries, start=1):
+    for category, query in SCHEDULE_QUERIES.items():
         try:
-            url = GOOGLE_NEWS_URL.format(query=quote_plus(query))
+            dated_query = f"{NEWS_QUERIES[category]} ({future_date_terms})"
+            url = GOOGLE_NEWS_URL.format(
+                query=quote_plus(f"({query}) OR ({dated_query}) when:30d")
+            )
             for story in parse_google_news(client.text(url)):
-                category = classify_category(story.title)
-                event = _find_event_time(story.title, story.published_at, generated_at)
-                if not category or not event:
+                event = _find_event_time(
+                    story.title,
+                    story.published_at,
+                    generated_at,
+                    allow_bare_day=True,
+                )
+                if not event:
                     continue
                 moment, time_confirmed = event
                 upcoming.append(
@@ -771,9 +812,9 @@ def build_feed(
                         else "날짜 확인·시각 미정",
                     )
                 )
-            health[f"schedule_news_{index}"] = "ok"
+            health[f"schedule_{category}"] = "ok"
         except Exception as error:
-            health[f"schedule_news_{index}"] = f"failed: {type(error).__name__}"
+            health[f"schedule_{category}"] = f"failed: {type(error).__name__}"
 
     official_schedule_items: list[dict[str, object]] = []
     for source_name, source_url, parser in (
@@ -820,7 +861,13 @@ def build_feed(
         <= generated_at + timedelta(days=7)
     ]
     upcoming.sort(key=lambda item: str(item["scheduled_at"]))
-    briefings.extend(upcoming[:44])
+    upcoming = [
+        item
+        for category in CATEGORIES[1:]
+        for item in [entry for entry in upcoming if entry["category"] == category][:8]
+    ]
+    upcoming.sort(key=lambda item: str(item["scheduled_at"]))
+    briefings.extend(upcoming)
 
     stock_issues: list[dict[str, object]] = []
     today_start = generated_at.replace(hour=0, minute=0, second=0, microsecond=0)
