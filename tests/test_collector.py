@@ -39,6 +39,64 @@ class ParserTests(unittest.TestCase):
         self.assertEqual((moment.month, moment.day), (8, 7))
         self.assertFalse(time_confirmed)
 
+    def test_bare_future_day_in_schedule_headline_is_detected(self) -> None:
+        now = datetime(2026, 8, 4, 10, tzinfo=SEOUL)
+        event = _find_event_time("전국 과학축전 7일 개최 예정", now, now)
+        self.assertIsNotNone(event)
+        moment, time_confirmed = event or (now, True)
+        self.assertEqual((moment.month, moment.day, moment.hour), (8, 7, 12))
+        self.assertFalse(time_confirmed)
+
+    def test_past_bare_day_is_not_moved_to_next_month(self) -> None:
+        now = datetime(2026, 8, 4, 22, tzinfo=SEOUL)
+        self.assertIsNone(_find_event_time("정책회의 3일 개최", now, now))
+
+    def test_bare_day_is_inferred_from_article_month_not_current_month(self) -> None:
+        now = datetime(2026, 8, 4, 10, tzinfo=SEOUL)
+        published = datetime(2026, 7, 1, 9, tzinfo=SEOUL)
+        self.assertIsNone(
+            _find_event_time(
+                "정책 발표 5일",
+                published,
+                now,
+                allow_bare_day=True,
+            )
+        )
+
+    def test_duration_count_is_not_mistaken_for_calendar_day(self) -> None:
+        now = datetime(2026, 8, 4, 10, tzinfo=SEOUL)
+        self.assertIsNone(
+            _find_event_time(
+                "국내 증시 5일 연속 상승",
+                now,
+                now,
+                allow_bare_day=True,
+            )
+        )
+
+    def test_rescheduled_headline_uses_new_date(self) -> None:
+        now = datetime(2026, 8, 4, 10, tzinfo=SEOUL)
+        event = _find_event_time(
+            "경기 일정 8월 8일→8월 10일로 변경",
+            now,
+            now,
+            allow_bare_day=True,
+        )
+        self.assertIsNotNone(event)
+        moment, _ = event or (now, False)
+        self.assertEqual((moment.month, moment.day), (8, 10))
+
+    def test_cancelled_schedule_is_excluded(self) -> None:
+        now = datetime(2026, 8, 4, 10, tzinfo=SEOUL)
+        self.assertIsNone(
+            _find_event_time(
+                "프로야구 8월 5일 경기 폭염으로 취소",
+                now,
+                now,
+                allow_bare_day=True,
+            )
+        )
+
     def test_official_schedule_tables_keep_announced_clock_time(self) -> None:
         kostat = """<table><tr><td>08.05.( 수 )</td><td>12:00</td>
         <td>고령층 부가조사 결과</td><td>고용통계과</td></tr></table>"""
