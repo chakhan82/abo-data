@@ -46,17 +46,109 @@ NEWS_QUERIES = {
 }
 
 CATEGORY_KEYWORDS = {
-    "사회": ("사회", "안전", "경찰", "법원", "검찰", "사고", "재난", "복지", "의료", "날씨", "폭염", "호우"),
-    "경제": ("경제", "물가", "금리", "고용", "수출", "수입", "소비", "무역", "환율", "한국은행", "국가데이터처"),
-    "산업": ("산업", "기업", "반도체", "자동차", "배터리", "조선", "항공", "에너지", "공급망", "공장"),
-    "증권": ("증시", "주식", "코스피", "코스닥", "상장", "공시", "실적", "주가", "투자", "증권"),
+    "사회": (
+        "사회",
+        "안전",
+        "경찰",
+        "법원",
+        "검찰",
+        "사고",
+        "재난",
+        "복지",
+        "의료",
+        "날씨",
+        "폭염",
+        "호우",
+    ),
+    "경제": (
+        "경제",
+        "물가",
+        "금리",
+        "고용",
+        "수출",
+        "수입",
+        "소비",
+        "무역",
+        "환율",
+        "한국은행",
+        "국가데이터처",
+    ),
+    "산업": (
+        "산업",
+        "기업",
+        "반도체",
+        "자동차",
+        "배터리",
+        "조선",
+        "항공",
+        "에너지",
+        "공급망",
+        "공장",
+    ),
+    "증권": (
+        "증시",
+        "주식",
+        "코스피",
+        "코스닥",
+        "상장",
+        "공시",
+        "실적",
+        "주가",
+        "투자",
+        "증권",
+    ),
     "부동산": ("부동산", "주택", "아파트", "전세", "월세", "분양", "재건축", "토지"),
-    "과학·기술": ("과학", "기술", "인공지능", "AI", "우주", "연구", "로봇", "보안", "플랫폼", "데이터센터"),
+    "과학·기술": (
+        "과학",
+        "기술",
+        "인공지능",
+        "AI",
+        "우주",
+        "연구",
+        "로봇",
+        "보안",
+        "플랫폼",
+        "데이터센터",
+    ),
     "교육": ("교육", "학교", "대학", "입시", "교사", "학생", "수능", "학원"),
-    "국제": ("국제", "미국", "중국", "일본", "유럽", "러시아", "우크라이나", "중동", "외교", "정상회담"),
+    "국제": (
+        "국제",
+        "미국",
+        "중국",
+        "일본",
+        "유럽",
+        "러시아",
+        "우크라이나",
+        "중동",
+        "외교",
+        "정상회담",
+    ),
     "정치": ("정치", "국회", "정부", "대통령", "장관", "여당", "야당", "선거", "법안"),
-    "문화": ("문화", "예술", "영화", "공연", "방송", "드라마", "음악", "출판", "전시", "축제"),
-    "스포츠": ("스포츠", "야구", "축구", "농구", "배구", "골프", "KBO", "K리그", "경기", "선수", "감독"),
+    "문화": (
+        "문화",
+        "예술",
+        "영화",
+        "공연",
+        "방송",
+        "드라마",
+        "음악",
+        "출판",
+        "전시",
+        "축제",
+    ),
+    "스포츠": (
+        "스포츠",
+        "야구",
+        "축구",
+        "농구",
+        "배구",
+        "골프",
+        "KBO",
+        "K리그",
+        "경기",
+        "선수",
+        "감독",
+    ),
 }
 
 IMPACT_TEXT = {
@@ -196,7 +288,12 @@ def parse_google_news(xml_text: str) -> list[Story]:
             title = title[: -len(suffix)].strip()
         link = _text(item.find("link"))
         published = _text(item.find("pubDate"))
-        if not title or not link or not published or len(re.findall(r"[가-힣]", title)) < 2:
+        if (
+            not title
+            or not link
+            or not published
+            or len(re.findall(r"[가-힣]", title)) < 2
+        ):
             continue
         stories.append(
             Story(
@@ -218,9 +315,7 @@ def parse_yonhap_news(xml_text: str) -> list[Story]:
         published = _text(item.find("pubDate"))
         description = _clean_html(_text(item.find("description")))
         description = re.sub(r"^\([^)]*=연합뉴스\)\s*", "", description)
-        description = re.sub(
-            r"^[가-힣A-Za-z·\s]{2,40}\s+기자\s*=\s*", "", description
-        )
+        description = re.sub(r"^[가-힣A-Za-z·\s]{2,40}\s+기자\s*=\s*", "", description)
         if len(description) < 20:
             description = ""
         if title and link and published:
@@ -238,7 +333,9 @@ def parse_yonhap_news(xml_text: str) -> list[Story]:
 
 def classify_category(title: str, default: str | None = None) -> str | None:
     scores = {
-        category: sum(2 if keyword.lower() in title.lower() else 0 for keyword in keywords)
+        category: sum(
+            2 if keyword.lower() in title.lower() else 0 for keyword in keywords
+        )
         for category, keywords in CATEGORY_KEYWORDS.items()
     }
     best = max(scores, key=scores.get)
@@ -274,7 +371,20 @@ def _stable_id(prefix: str, *values: str) -> str:
 def _importance(title: str, published_at: datetime, now: datetime) -> float:
     age_hours = max(0.0, (now - published_at).total_seconds() / 3600)
     score = 96.0 - min(age_hours, 120) * 0.18
-    if any(word in title for word in ("확정", "발표", "속보", "경보", "금리", "물가", "실적", "공시", "합의")):
+    if any(
+        word in title
+        for word in (
+            "확정",
+            "발표",
+            "속보",
+            "경보",
+            "금리",
+            "물가",
+            "실적",
+            "공시",
+            "합의",
+        )
+    ):
         score += 2.5
     if any(word in title for word in ("포토", "운세", "화보")):
         score -= 8
@@ -324,9 +434,7 @@ def _deduplicate(items: Iterable[dict[str, object]]) -> list[dict[str, object]]:
     result: list[dict[str, object]] = []
     seen: set[str] = set()
     for item in items:
-        normalized_title = re.sub(
-            r"[^0-9a-z가-힣]", "", str(item["title"]).lower()
-        )
+        normalized_title = re.sub(r"[^0-9a-z가-힣]", "", str(item["title"]).lower())
         key = f"{item.get('type', '')}:{normalized_title}"
         if not key or key in seen:
             continue
@@ -335,18 +443,26 @@ def _deduplicate(items: Iterable[dict[str, object]]) -> list[dict[str, object]]:
     return result
 
 
-def _find_event_time(title: str, published_at: datetime, now: datetime) -> tuple[datetime, bool] | None:
+def _find_event_time(
+    title: str, published_at: datetime, now: datetime
+) -> tuple[datetime, bool] | None:
     date_value: datetime | None = None
     absolute = re.search(r"(?:(20\d{2})년\s*)?(\d{1,2})월\s*(\d{1,2})일", title)
     if absolute:
         year = int(absolute.group(1) or now.year)
-        date_value = datetime(year, int(absolute.group(2)), int(absolute.group(3)), tzinfo=SEOUL)
+        date_value = datetime(
+            year, int(absolute.group(2)), int(absolute.group(3)), tzinfo=SEOUL
+        )
         if absolute.group(1) is None and date_value < now - timedelta(days=180):
             date_value = date_value.replace(year=year + 1)
     elif "모레" in title:
-        date_value = (published_at + timedelta(days=2)).replace(hour=0, minute=0, second=0, microsecond=0)
+        date_value = (published_at + timedelta(days=2)).replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
     elif "내일" in title:
-        date_value = (published_at + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+        date_value = (published_at + timedelta(days=1)).replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
     elif "오늘" in title:
         date_value = published_at.replace(hour=0, minute=0, second=0, microsecond=0)
     else:
@@ -389,7 +505,9 @@ def _table_rows(document: str) -> list[list[str]]:
     for raw_row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", document, flags=re.I | re.S):
         cells = [
             _clean_html(cell)
-            for cell in re.findall(r"<t[dh]\b[^>]*>(.*?)</t[dh]>", raw_row, flags=re.I | re.S)
+            for cell in re.findall(
+                r"<t[dh]\b[^>]*>(.*?)</t[dh]>", raw_row, flags=re.I | re.S
+            )
         ]
         if cells:
             rows.append(cells)
@@ -503,11 +621,16 @@ def parse_yahoo_market(
     result = payload["chart"]["result"][0]
     meta = result["meta"]
     current = float(meta.get("regularMarketPrice") or 0) * multiplier
-    previous = float(meta.get("previousClose") or meta.get("chartPreviousClose") or 0) * multiplier
+    previous = (
+        float(meta.get("previousClose") or meta.get("chartPreviousClose") or 0)
+        * multiplier
+    )
     if not current or not previous:
         closes = [
             float(value) * multiplier
-            for value in result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+            for value in result.get("indicators", {})
+            .get("quote", [{}])[0]
+            .get("close", [])
             if value is not None
         ]
         if len(closes) < 2:
@@ -537,7 +660,9 @@ def parse_upbit_market(payload: list[dict[str, Any]]) -> dict[str, object]:
     value = payload[0]
     current = float(value["trade_price"])
     previous = float(value["prev_closing_price"])
-    observed = datetime.fromtimestamp(int(value["timestamp"]) / 1000, timezone.utc).astimezone(SEOUL)
+    observed = datetime.fromtimestamp(
+        int(value["timestamp"]) / 1000, timezone.utc
+    ).astimezone(SEOUL)
     return {
         "symbol": "BTC",
         "display_name": "비트코인",
@@ -552,7 +677,9 @@ def parse_upbit_market(payload: list[dict[str, Any]]) -> dict[str, object]:
     }
 
 
-def _previous_items(previous: dict[str, Any] | None, item_type: str, category: str | None = None) -> list[dict[str, object]]:
+def _previous_items(
+    previous: dict[str, Any] | None, item_type: str, category: str | None = None
+) -> list[dict[str, object]]:
     if not previous:
         return []
     return [
@@ -575,7 +702,9 @@ def build_feed(
     health: dict[str, str] = {}
     briefings: list[dict[str, object]] = []
 
-    yonhap_by_category: dict[str, list[Story]] = {category: [] for category in CATEGORIES[1:]}
+    yonhap_by_category: dict[str, list[Story]] = {
+        category: [] for category in CATEGORIES[1:]
+    }
     try:
         for story in parse_yonhap_news(client.text(YONHAP_RSS_URL)):
             category = classify_category(story.title)
@@ -598,10 +727,15 @@ def build_feed(
                 story, category=category, item_type="past", now=generated_at
             )
             for story in stories
-            if generated_at - timedelta(days=7) <= story.published_at <= generated_at + timedelta(minutes=10)
+            if generated_at - timedelta(days=7)
+            <= story.published_at
+            <= generated_at + timedelta(minutes=10)
         ]
         fresh_items.sort(
-            key=lambda item: (float(item["importance_score"]), str(item["published_at"])),
+            key=lambda item: (
+                float(item["importance_score"]),
+                str(item["published_at"]),
+            ),
             reverse=True,
         )
         combined = _deduplicate(
@@ -632,7 +766,9 @@ def build_feed(
                         now=generated_at,
                         scheduled_at=moment,
                         time_confirmed=time_confirmed,
-                        schedule_status="보도된 예정 일정" if time_confirmed else "날짜 확인·시각 미정",
+                        schedule_status="보도된 예정 일정"
+                        if time_confirmed
+                        else "날짜 확인·시각 미정",
                     )
                 )
             health[f"schedule_news_{index}"] = "ok"
@@ -679,14 +815,46 @@ def build_feed(
     upcoming = [
         item
         for item in upcoming
-        if generated_at <= datetime.fromisoformat(str(item["scheduled_at"])) <= generated_at + timedelta(days=7)
+        if generated_at
+        <= datetime.fromisoformat(str(item["scheduled_at"]))
+        <= generated_at + timedelta(days=7)
     ]
     upcoming.sort(key=lambda item: str(item["scheduled_at"]))
     briefings.extend(upcoming[:44])
 
     stock_issues: list[dict[str, object]] = []
+    today_start = generated_at.replace(hour=0, minute=0, second=0, microsecond=0)
+    yesterday_start = today_start - timedelta(days=1)
     try:
-        stock_issues = parse_dart(client.text(DART_RSS_URL), generated_at)
+        query = (
+            "(증시 OR 주식 OR 코스피 OR 코스닥 OR 공시) "
+            f"after:{(yesterday_start - timedelta(days=1)).date().isoformat()} "
+            f"before:{yesterday_start.date().isoformat()}"
+        )
+        url = GOOGLE_NEWS_URL.format(query=quote_plus(query))
+        for story in parse_google_news(client.text(url)):
+            if yesterday_start <= story.published_at < today_start:
+                stock_issues.append(
+                    _briefing_from_story(
+                        story,
+                        category="증권",
+                        item_type="stock_issue",
+                        now=generated_at,
+                    )
+                )
+        health["stock_news_yesterday"] = "ok"
+    except Exception as error:
+        health["stock_news_yesterday"] = f"failed: {type(error).__name__}"
+
+    try:
+        dart_items = parse_dart(client.text(DART_RSS_URL), generated_at)
+        stock_issues.extend(
+            item
+            for item in dart_items
+            if yesterday_start
+            <= datetime.fromisoformat(str(item["published_at"]))
+            < today_start
+        )
         health["dart_rss"] = "ok"
     except Exception as error:
         health["dart_rss"] = f"failed: {type(error).__name__}"
@@ -694,11 +862,25 @@ def build_feed(
         [
             *stock_issues,
             *[
-                {**item, "id": _stable_id("stock_issue", str(item["source_url"])) , "type": "stock_issue"}
+                {
+                    **item,
+                    "id": _stable_id("stock_issue", str(item["source_url"])),
+                    "type": "stock_issue",
+                }
                 for item in briefings
-                if item.get("type") == "past" and item.get("category") == "증권"
+                if item.get("type") == "past"
+                and item.get("category") == "증권"
+                and yesterday_start
+                <= datetime.fromisoformat(str(item["published_at"]))
+                < today_start
             ],
-            *_previous_items(previous, "stock_issue"),
+            *[
+                item
+                for item in _previous_items(previous, "stock_issue")
+                if yesterday_start
+                <= datetime.fromisoformat(str(item["published_at"]))
+                < today_start
+            ],
         ]
     )[:12]
     briefings.extend(stock_issues)
@@ -717,7 +899,9 @@ def build_feed(
     stock_calendar.extend(
         {
             **item,
-            "id": _stable_id("stock_calendar", str(item["source_url"]), str(item["scheduled_at"])),
+            "id": _stable_id(
+                "stock_calendar", str(item["source_url"]), str(item["scheduled_at"])
+            ),
             "type": "stock_calendar",
             "category": "증권",
             "impact": IMPACT_TEXT["증권"],
@@ -732,7 +916,9 @@ def build_feed(
     stock_calendar = [
         item
         for item in stock_calendar
-        if generated_at <= datetime.fromisoformat(str(item["scheduled_at"])) <= generated_at + timedelta(days=7)
+        if generated_at
+        <= datetime.fromisoformat(str(item["scheduled_at"]))
+        <= generated_at + timedelta(days=7)
     ][:12]
     briefings.extend(stock_calendar)
 
@@ -772,7 +958,9 @@ def build_feed(
     }
     current_symbols = {item["symbol"] for item in markets}
     markets.extend(
-        item for symbol, item in previous_markets.items() if symbol not in current_symbols
+        item
+        for symbol, item in previous_markets.items()
+        if symbol not in current_symbols
     )
 
     failed_sources = sum(value != "ok" for value in health.values())
@@ -841,7 +1029,9 @@ def _load_previous(path: str | None) -> dict[str, Any] | None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Collect the ABO real static JSON feed")
+    parser = argparse.ArgumentParser(
+        description="Collect the ABO real static JSON feed"
+    )
     parser.add_argument("--output", default="public/data/briefing.json")
     parser.add_argument("--previous", help="last successfully deployed feed")
     args = parser.parse_args()
@@ -855,7 +1045,9 @@ def main() -> None:
     counts: dict[str, int] = {}
     for item in feed["briefings"]:
         counts[str(item["type"])] = counts.get(str(item["type"]), 0) + 1
-    print(f"Generated {output} ({output.stat().st_size} bytes): {counts}, markets={len(feed['markets'])}")
+    print(
+        f"Generated {output} ({output.stat().st_size} bytes): {counts}, markets={len(feed['markets'])}"
+    )
 
 
 if __name__ == "__main__":

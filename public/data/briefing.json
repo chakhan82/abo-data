@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-04T21:53:52+09:00",
-  "content_updated_at": "2026-08-04T21:53:52+09:00",
+  "generated_at": "2026-08-04T22:10:18+09:00",
+  "content_updated_at": "2026-08-04T22:10:18+09:00",
   "timezone": "Asia/Seoul",
   "is_example": false,
   "notice": "공개 RSS·공식 일정·공개 시장 데이터를 자동 정리했습니다. 기사 세부 내용과 일정 변경은 원문에서 다시 확인해 주세요.",
@@ -21,6 +21,34 @@
   ],
   "briefings": [
     {
+      "id": "past-640ee1d45c088e5380",
+      "type": "past",
+      "category": "사회",
+      "title": "충남 아산에 호우경보 해제…천안 등 13곳 폭염경보 유지",
+      "summary": "기상청은 아산에 발령했던 호우경보를 4일 오후 10시를 기해 해제한다고 밝혔다.",
+      "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
+      "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
+      "importance_score": 98.5,
+      "published_at": "2026-08-04T22:02:28+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "연합뉴스",
+      "source_url": "https://www.yna.co.kr/view/AKR20260804167300527",
+      "related_keywords": [
+        "사회",
+        "호우경보",
+        "폭염경보",
+        "아산에"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.92,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
       "id": "past-f64cfbf168cead4385",
       "type": "past",
       "category": "사회",
@@ -28,7 +56,7 @@
       "summary": "기상청은 4일 오후 9시 35분을 기해 아산에 호우경보를 발효한다고 밝혔다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 98.5,
+      "importance_score": 98.4,
       "published_at": "2026-08-04T21:40:34+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -45,8 +73,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9dde74d08b38c0d351",
@@ -73,8 +101,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-57307bb6e4768ca673",
@@ -84,7 +112,7 @@
       "summary": "연일 이어지는 극한 폭염 속에 서울에서 올해 여름 들어 가장 많은 온열질환자가 발생했다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 98.4,
+      "importance_score": 98.3,
       "published_at": "2026-08-04T21:12:35+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -101,8 +129,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-69bb48877640477e86",
@@ -112,7 +140,7 @@
       "summary": "[속보] 폭염중대경보 내려진 서울…어제 온열질환자 23명 '올해 최다' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 98.4,
+      "importance_score": 98.3,
       "published_at": "2026-08-04T21:05:16+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -129,8 +157,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5cdd019b838d96ca04",
@@ -140,7 +168,7 @@
       "summary": "폭염경보가 내려진 전남광주 무안군 한 아파트에서 화재로 이틀째 전력 공급이 끊겨 주민들이 큰 불편을 겪고 있다...",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 98.0,
+      "importance_score": 97.9,
       "published_at": "2026-08-04T19:00:42+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -157,8 +185,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7ed1efa318c618c08d",
@@ -168,7 +196,7 @@
       "summary": "서울에 첫 폭염중대경보가 발효된 4일 시내 일부 재난안전 전광판에 잘못된 온도가 표출되면서 시민...",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 98.0,
+      "importance_score": 97.9,
       "published_at": "2026-08-04T19:00:35+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -185,8 +213,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9924b68bec016bf1d6",
@@ -213,8 +241,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d7dd73d29aeef5ded4",
@@ -224,7 +252,7 @@
       "summary": "이도연 특파원 = 일본에서 폭염이 계속되면서 최근 1주일간 열사병으로 병원으로 이송된 사람이 9천명을 넘는 것으로 나타났다고 ...",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 96.0,
+      "importance_score": 95.9,
       "published_at": "2026-08-04T21:45:11+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -241,8 +269,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-26ca2e0c346fba08f9",
@@ -269,8 +297,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e9a9a2d2b6b459c789",
@@ -280,7 +308,7 @@
       "summary": "한국가스기술공사, CEO 안전실천회의 개최…중대재해 예방 점검 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.8,
+      "importance_score": 95.7,
       "published_at": "2026-08-04T20:44:21+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -297,8 +325,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f471051cedbe3a24ae",
@@ -308,7 +336,7 @@
       "summary": "수요일인 5일은 전국 대부분 지역에서 최고 체감온도가 35도 안팎으로 올라 무덥겠다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:00:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -325,8 +353,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a939b10ea779714856",
@@ -353,8 +381,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b1d7a6f8ca85cb8783",
@@ -364,7 +392,7 @@
       "summary": "연일 이어지는 폭염에 전남광주의 가축과 양식 어류 폐사 피해가 급증하고 있다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.6,
+      "importance_score": 95.5,
       "published_at": "2026-08-04T19:26:50+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -381,8 +409,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-362edb2d4641b894ab",
@@ -392,7 +420,7 @@
       "summary": "오는 10월 출범을 앞둔 중대범죄수사청이 '검찰 인력 영입'을 위해 채용 시험 면제·보수 유지 등 유인책을 내...",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.5,
+      "importance_score": 95.4,
       "published_at": "2026-08-04T19:00:40+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -409,8 +437,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5537224f29ce0b4f62",
@@ -420,7 +448,7 @@
       "summary": "국립중앙의료원과 경기도의료원이 지역 의료현장의 인력 부족과 진료 공백을 해소하기 위한 공동 대응에 나선다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:25:47+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -437,8 +465,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-920df25a680d744b84",
@@ -465,8 +493,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d68cf365866069eff2",
@@ -476,7 +504,7 @@
       "summary": "포항대학교 RISE 사업단, 다문화·외국인 문화 예절 프로그램 마무리 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:49:43+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -493,8 +521,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-698f5a662b7c8abb15",
@@ -504,7 +532,7 @@
       "summary": "전국적으로 폭염이 이어지는 가운데 동해 연안에 고수온 주의보까지 발효되면서 경북 동해안 양식 어업인의 긴장감이...",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:45:24+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -521,8 +549,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-562af10e2c844a1e41",
@@ -549,8 +577,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-460d7e862288c0a65a",
@@ -577,8 +605,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-23447e9c5102eefe68",
@@ -588,7 +616,7 @@
       "summary": "한국산림복지진흥원의 조용한 쉼표와 거침없는 도전 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:24:22+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -605,8 +633,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1e3dceb598874f199f",
@@ -616,7 +644,7 @@
       "summary": "한국노총 대전 근로복지회관 '파행 운영' 논란···무단 입주에 공간 전용까지 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:20:39+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -633,8 +661,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2f4c145f488ef75c8b",
@@ -644,7 +672,7 @@
       "summary": "자주 통일, 반제 평화의 기치를 더 높이 들어야 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
       "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:18:13+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -661,36 +689,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-66a6462b4303b9fcd8",
-      "type": "past",
-      "category": "사회",
-      "title": "“예뻐야 기회도 많아진다?”…외국인이 한국에서 마주한 ‘외모가 스펙인 사회’",
-      "summary": "“예뻐야 기회도 많아진다?”…외국인이 한국에서 마주한 ‘외모가 스펙인 사회’ 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "당국의 후속 조치와 현장 안전 안내가 어떻게 이어지는지 확인해 보세요.",
-      "impact": "생활 안전과 공공서비스에 미칠 영향을 살펴볼 사안입니다.",
-      "importance_score": 95.1,
-      "published_at": "2026-08-04T16:52:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "위키트리",
-      "source_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2MUxoRXZaWWV4NGdRaWlEN3hTOENGakVnSFYxUHp0MU0yVVlEVVo2Tmc2TTF1U1o4RkV6eml4VGd3bEpnaU82SkZ3U3o0QXJkczg1REp3?oc=5",
-      "related_keywords": [
-        "사회",
-        "많아진다",
-        "외국인이",
-        "한국에서"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-66a5b1a0e91b0c7c78",
@@ -717,8 +717,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a3a1c7df4eb0fe59a4",
@@ -728,7 +728,7 @@
       "summary": "카카오페이, 2분기 역대 최대 실적 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 97.7,
+      "importance_score": 97.6,
       "published_at": "2026-08-04T17:24:03+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -745,8 +745,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5ae57e95f8f99d6bb6",
@@ -773,8 +773,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d5aab94e2d9cccb510",
@@ -801,8 +801,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-99b3a087f022c8164c",
@@ -829,8 +829,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-144d106f242c0400fb",
@@ -857,8 +857,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-45e95843ed6cda81fe",
@@ -868,11 +868,11 @@
       "summary": "미네르바 아카데미 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.5,
+      "importance_score": 95.4,
       "published_at": "2026-08-04T18:58:38+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "wowtv.co.kr",
+      "source_name": "한국경제TV",
       "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdjNpU0RhdEoxa0pVNVR5X2w5M2hYaVFnTWFGazROck9uVF9kcWlVOW1SNHZDbUQxVUdkZFkzdkljdk1fRmlUeU01NHBGQ2UxelVFbDlDT0dCbGVFZmNsUFpLTzB4WnhwT0ZXMkR5anQ3WEg3eHBCSTVIUmY3VERCa1JwTUpwaTFPYnNnVlpBTldvNlNRMVMxa0x3SnduckRULXU0?oc=5",
       "related_keywords": [
         "경제",
@@ -884,8 +884,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-67d69ad7717cafa334",
@@ -895,7 +895,7 @@
       "summary": "[인사] 고용노동부 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:27:06+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -911,8 +911,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d8315206878630f96e",
@@ -939,8 +939,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a73d3b9b3f1b4d308e",
@@ -967,8 +967,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-849e9325095f40d02d",
@@ -978,7 +978,7 @@
       "summary": "김상훈 특파원 = 사우디아라비아의 국영 석유기업 아람코는 지난달 자사 시설에 대한 후티 반군의 공격과 해상 봉쇄 위협이 실질...",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:24:17+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -995,8 +995,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7851119eaa1b01461a",
@@ -1006,7 +1006,7 @@
       "summary": "K뷰티에 베팅하는 글로벌 큰손 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:22:13+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1023,8 +1023,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d81f78a6b992c7cef2",
@@ -1034,7 +1034,7 @@
       "summary": "화우, '글로벌 M&A 전문' 박 스펜서 선임외국변호사 영입 [로앤비즈 브리핑] 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:52:28+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1051,8 +1051,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-23cdbf2bf10eabe8ae",
@@ -1062,7 +1062,7 @@
       "summary": "김대종 세종대 교수 ‘4700조 메가프로젝트, 2027년 경제 대전망’ 출간 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:38:17+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1079,8 +1079,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-0759ec22d8e20ac8cd",
@@ -1090,7 +1090,7 @@
       "summary": "\"AI 투자 통했다\"…아마존, 시총 3조달러 첫 돌파 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:36:23+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1107,8 +1107,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-289e893ca61c593fe9",
@@ -1135,8 +1135,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b438ad0b68fa547562",
@@ -1146,7 +1146,7 @@
       "summary": "사상 최고치 찍은 '버핏지수'…美증시 수익률 경고음 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T15:06:44+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1163,8 +1163,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-15cf22529362ca658c",
@@ -1174,7 +1174,7 @@
       "summary": "소통 - 소통 콘텐츠 - 뉴스레터 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T15:00:24+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1191,8 +1191,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e5ea3649865bbc1519",
@@ -1202,7 +1202,7 @@
       "summary": "한국경제 연구 비중 '급감'…\"연구생태계 구조개선 시급\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T14:59:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1219,8 +1219,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d833db51378e557f53",
@@ -1247,8 +1247,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-6aa7223d5ea54e3b25",
@@ -1275,8 +1275,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f01ec96e3a123274c4",
@@ -1286,7 +1286,7 @@
       "summary": "SSCI급 해외 저널 좇다 ‘한국경제’ 연구 비중 26년래 최저 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.5,
+      "importance_score": 94.4,
       "published_at": "2026-08-04T13:28:56+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1303,8 +1303,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-01528adcbfac4da1a2",
@@ -1314,7 +1314,7 @@
       "summary": "대한상의 \"국가적 난제 쌓이는데 한국경제 연구는 오히려 기피\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.5,
+      "importance_score": 94.4,
       "published_at": "2026-08-04T13:27:16+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1331,8 +1331,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-005ed7337dbd50578c",
@@ -1342,7 +1342,7 @@
       "summary": "초저출생·고령화 난제 쌓이는데… 경제학자들, 한국경제 연구 기피 심화 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "한 번의 수치보다 이전 발표와의 변화, 체감경기의 방향을 함께 보는 게 좋습니다.",
       "impact": "물가·고용·소비 심리와 정책 판단에 영향을 줄 수 있습니다.",
-      "importance_score": 94.3,
+      "importance_score": 94.2,
       "published_at": "2026-08-04T12:21:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1359,8 +1359,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a599284168f1d5f847",
@@ -1387,8 +1387,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8fe03b761b563097bb",
@@ -1398,7 +1398,7 @@
       "summary": "정부가 3대 메가프로젝트와 제조 인공지능(AI) 전환(M.AX) 추진 속도를 높인다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:06:49+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1415,8 +1415,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-96aa68300420b6b003",
@@ -1426,7 +1426,7 @@
       "summary": "중국 반도체의 추격 속도에 삼전·하이닉스는 긴장 중! 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.5,
+      "importance_score": 95.4,
       "published_at": "2026-08-04T19:05:22+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1443,8 +1443,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-221f2b87d4cf1eeec2",
@@ -1454,7 +1454,7 @@
       "summary": "KT, 한국산업인력공단과 AI 인재양성·공공 디지털 혁신 맞손 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:27:19+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1471,8 +1471,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f7d6e3451ffcf24449",
@@ -1499,8 +1499,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b1045d50bab7139016",
@@ -1510,7 +1510,7 @@
       "summary": "과학기술정보통신부는 4일 싱가포르 통상산업부와 '제1차 한-싱가포르 과학기술공동위원회'를 화상회의로 개최했다고...",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T18:00:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1527,8 +1527,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3e4e650d774e5b03c4",
@@ -1538,7 +1538,7 @@
       "summary": "日 구마모토 강진 일주일…한국 기업들 생수·생활용품 지원 ‘온정’ 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:59:29+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1555,8 +1555,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ca07b8373828e23451",
@@ -1583,8 +1583,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a21e5d9b2fe5c8cfac",
@@ -1611,8 +1611,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-baeb66539303eefbf9",
@@ -1639,8 +1639,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-691d7fada927665426",
@@ -1667,8 +1667,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-adb29be4461ca4ad1e",
@@ -1695,8 +1695,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f42a066e952db1fe57",
@@ -1723,8 +1723,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d56aab2038b74644ff",
@@ -1734,7 +1734,7 @@
       "summary": "정부가 기업의 성장 단계별 지원을 통해 '국가대표 도약기업' 3천곳을 육성하고, 사업에 실패하거나 위기를 맞은...",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:25:27+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1751,8 +1751,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-af444622e26de68858",
@@ -1762,7 +1762,7 @@
       "summary": "되살아난 전기차 수요, 중국산 더 늘었다…“국내생산세액공제 필요” 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:23:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1779,64 +1779,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-163d3f9cf16dd01b1b",
-      "type": "past",
-      "category": "산업",
-      "title": "구미시, 첨단산업 혁신단 출범…\"정부·삼성 투자에 대응\"",
-      "summary": "경북 구미시는 지역산업의 미래 성장 동력을 이끌어갈 '첨단산업 혁신TF 추진단'을 출범했다고 4일 밝혔다.",
-      "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
-      "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
-      "published_at": "2026-08-04T17:21:36+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "연합뉴스",
-      "source_url": "https://www.yna.co.kr/view/AKR20260804144600053",
-      "related_keywords": [
-        "산업",
-        "첨단산업",
-        "구미시",
-        "혁신단"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-9655c740e698f7b475",
-      "type": "past",
-      "category": "산업",
-      "title": "동남아·남아시아 밤이 어두워졌다…에너지난에 야간조명 줄어",
-      "summary": "박진형 특파원 = 중동산 에너지 의존도가 높은 동남아시아와 남아시아 각국이 이란 전쟁 이후 에너지 공급 혼란의 여파로 경제 ...",
-      "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
-      "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
-      "published_at": "2026-08-04T17:20:31+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "연합뉴스",
-      "source_url": "https://www.yna.co.kr/view/AKR20260804142500084",
-      "related_keywords": [
-        "산업",
-        "어두워졌다",
-        "에너지난에",
-        "남아시아"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-75e180a67157defcc7",
@@ -1846,7 +1790,7 @@
       "summary": "KT, 한국산업인력공단과 AI 역량 강화 '맞손' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:47:52+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1863,8 +1807,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-955601953f14042890",
@@ -1874,7 +1818,7 @@
       "summary": "마키나락스, HD한국조선해양 용접 로봇에 이상탐지 AI 적용 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:40:27+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1891,8 +1835,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1c342de2af40e506ac",
@@ -1919,8 +1863,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7e421360f8fc1cb05f",
@@ -1930,7 +1874,7 @@
       "summary": "KT, 공공 AI 인재 키운다…한국산업인력공단과 협력 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
       "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:46:34+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -1947,8 +1891,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-49b184d51929239906",
@@ -1975,8 +1919,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3bc4fd7fea1eb19164",
@@ -2003,8 +1947,92 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-4d6570a47633d40368",
+      "type": "past",
+      "category": "산업",
+      "title": "KT-한국산업인력공단, 'AI 역량 강화 업무협약' 체결",
+      "summary": "KT-한국산업인력공단, 'AI 역량 강화 업무협약' 체결 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
+      "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
+      "importance_score": 94.7,
+      "published_at": "2026-08-04T15:11:59+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "글로벌이코노믹",
+      "source_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hVVBtaklyS1dobEJab1NLYi1xUFVFYldvaTFibmFBN2Vwa1FGeHc0TVdIQkI5MlBQTDdxMVZrNzdJVmZhc1pEQzdjd0w4dmZfcUt2M0lwOTdaQ2djemFJeURzMVRJbE5ZSU9UY2t5SGdocHJvNWcyX05mOUhaMDg?oc=5",
+      "related_keywords": [
+        "산업",
+        "한국산업인력공단",
+        "업무협약",
+        "KT"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-c2fd9189665d4c4348",
+      "type": "past",
+      "category": "산업",
+      "title": "[아주사설│기본·원칙·상식] 미·중 격돌의 시대, 한국 경제는 어디로 가야 하는가",
+      "summary": "[아주사설│기본·원칙·상식] 미·중 격돌의 시대, 한국 경제는 어디로 가야 하는가 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "발표 내용이 실제 투자·생산 일정으로 이어지는지가 다음 관전 포인트입니다.",
+      "impact": "기업 투자와 공급망, 관련 업종의 경쟁 구도에 영향을 줄 수 있습니다.",
+      "importance_score": 94.7,
+      "published_at": "2026-08-04T15:05:38+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "아주경제",
+      "source_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4xUW5IUXZNeldnSXQxeHFoSlVCRktTUjNiZ184enVQUjJmVlNoZWRYM2p1Nl9zcHBkVDVPUHltX3N0MFJjZzl6emhxcEFpUld5bEJ3eXZvMXbSAVhBVV95cUxOMVFuSFF2TXpXZ0l0MXhxaEpVQkZLU1IzYmdfOHp1UFIyZlZTaGVkWDNqdTZfc3BwZFQ1T1B5bV9zdDBSY2c5enpocXBBaVJXeWxCd3l2bzF2?oc=5",
+      "related_keywords": [
+        "산업",
+        "아주사설",
+        "격돌의",
+        "경제는"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-ae612ae0a225e832a4",
+      "type": "past",
+      "category": "증권",
+      "title": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
+      "summary": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 95.8,
+      "published_at": "2026-08-04T21:13:41+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "v.daum.net",
+      "source_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBMeXZOQzFHTllFODhtMUVCWWJkc0N2a1d0ZnZEQkdXM2N3Y2NSaHgtV2xNQzk1b2tqc3FZeDRJNDFneXhEd0VndExtcWJ3NkE?oc=5",
+      "related_keywords": [
+        "증권",
+        "한국거래소",
+        "증거금률",
+        "변동성"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-0754ad763a8ed82c20",
@@ -2031,8 +2059,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4afeb2ee76070ed797",
@@ -2059,8 +2087,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-bbf3d734518d5a71a1",
@@ -2070,7 +2098,7 @@
       "summary": "한국거래소는 에스텍시스템 주권의 유가증권시장 상장예비심사 신청서를 4일 접수했다고 밝혔다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:32:38+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2087,8 +2115,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fc52e201de3a5fb023",
@@ -2098,7 +2126,7 @@
       "summary": "반도체가 끌어올린 증시 수급 공백에 흔들…“하반기, 8월 美 국채가 분수령” 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:31:16+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2115,8 +2143,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e39350ca7df6e0ae87",
@@ -2143,8 +2171,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-57f26edffd97f6efb9",
@@ -2171,8 +2199,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e1b8382a7d5cf2409f",
@@ -2182,7 +2210,7 @@
       "summary": "[퇴근길머니] 코스피 주춤·코스닥 급등…증권가 목표가 줄하향 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:26:08+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2199,8 +2227,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9f4f9cf69994e4982d",
@@ -2210,7 +2238,7 @@
       "summary": "사상 최대폭 반등 이후 코스피가 바닥을 다지는 사이 코스닥이 그간의 설움을 씻어내려는 듯 연일 급등세를 이어가...",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:22:22+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2227,8 +2255,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-743ffd3ed398d4be5d",
@@ -2238,7 +2266,7 @@
       "summary": "코스피 변동성에 지친 개미들…국장 ‘손절’ 가속화? 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:44:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2255,8 +2283,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2b7e2a0821f6fce3e9",
@@ -2283,8 +2311,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3386a988d7d20b9106",
@@ -2311,8 +2339,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-aafb94f14b6b77fc80",
@@ -2322,7 +2350,7 @@
       "summary": "코스피, 1.6% 반등 6,300대 마감…코스닥 5.9% 급등(종합) 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:05:41+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2339,8 +2367,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-44dedc34f9d213d90e",
@@ -2367,8 +2395,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-98a99073782411a6ec",
@@ -2378,7 +2406,7 @@
       "summary": "美블룸버그,한국 증시에 ‘중국 전철’ 경고...\"정부 부양책이 과열과 급락 초래\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:39:34+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2395,8 +2423,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-aae003b195db80e6ec",
@@ -2423,8 +2451,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7df3c939f017601755",
@@ -2434,7 +2462,7 @@
       "summary": "코스피 약세에 RIA 출시 이후 처음 잔고 감소 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 94.7,
+      "importance_score": 94.6,
       "published_at": "2026-08-04T14:39:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2451,8 +2479,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3d738f06c904e83b82",
@@ -2479,8 +2507,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fbe0dcd6793e891c38",
@@ -2490,7 +2518,7 @@
       "summary": "\"11년 전 중국 사태와 맞먹는 수준\"…한국 섬뜩 경고 왜 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 94.5,
+      "importance_score": 94.4,
       "published_at": "2026-08-04T13:33:05+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2507,8 +2535,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e34e5f385be8bdd75d",
@@ -2535,8 +2563,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-98d2646424fab0ad99",
@@ -2563,8 +2591,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-790278bbafcb202e98",
@@ -2591,8 +2619,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-15e6ee464639c2ac09",
@@ -2619,8 +2647,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-904cf7fe0d12dfeb64",
@@ -2630,7 +2658,7 @@
       "summary": "“코스피 40% 폭락” 외신, 한국 증시 맹비판 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 93.9,
+      "importance_score": 93.8,
       "published_at": "2026-08-04T10:10:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2647,36 +2675,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-0855ff98da985f558c",
-      "type": "past",
-      "category": "증권",
-      "title": "“주식 2억 굴려도 세금 0원”…청년들 난리 날 이 통장의 정체",
-      "summary": "“주식 2억 굴려도 세금 0원”…청년들 난리 날 이 통장의 정체 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 93.7,
-      "published_at": "2026-08-04T08:55:31+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "매일경제 마켓",
-      "source_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHVl9iZldKbGczOUZ2Zi03bVhycjRreDhqVEg0S0IycUtzS096MXkxcTZhZnF6dFNrNG1fVGpVV1BsVE1XeDJmaDlyZ19neFNtaEE?oc=5",
-      "related_keywords": [
-        "증권",
-        "굴려도",
-        "청년들",
-        "통장의"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ea826bfd2b72a4a371",
@@ -2703,8 +2703,36 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-40d90021a76fb7bd54",
+      "type": "past",
+      "category": "부동산",
+      "title": "전세 줄고 매물 잠길라…난해한 부동산 세제 '4가지 맹점'",
+      "summary": "전세 줄고 매물 잠길라…난해한 부동산 세제 '4가지 맹점' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
+      "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
+      "importance_score": 95.9,
+      "published_at": "2026-08-04T21:36:00+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "한국경제",
+      "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05Z2hVUE5DY1cxYTV1ODFQOVZkRjB2OElibFRSRWNUMEVBcGNveEMtMW53ZUt0UHBGeEJIZDhId3RMXzR3Q3luelNIUE5XSjBiSF9ydFRfdEVRUQ?oc=5",
+      "related_keywords": [
+        "부동산",
+        "잠길라",
+        "난해한",
+        "4가지"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-76ffaf30311c6d0501",
@@ -2731,8 +2759,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9a73da7954805829c5",
@@ -2742,7 +2770,7 @@
       "summary": "부동산 여론 심상치않자…이 대통령, 세제 이어 공급 속도전 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:00:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2759,8 +2787,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-86bba916edff7805a4",
@@ -2787,8 +2815,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3cd362b87ec753c395",
@@ -2798,7 +2826,7 @@
       "summary": "“한국 부동산 시장에서 임차인은 투명인간”…세제개편 이후 남은 과제는? 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.6,
+      "importance_score": 95.5,
       "published_at": "2026-08-04T19:39:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2815,64 +2843,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-b0f0f660449aa4526c",
-      "type": "past",
-      "category": "부동산",
-      "title": "전세 줄고 매물 잠길라…난해한 부동산 세제 '4가지 맹점'",
-      "summary": "전세 줄고 매물 잠길라…난해한 부동산 세제 '4가지 맹점' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
-      "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.5,
-      "published_at": "2026-08-04T19:00:03+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "한국경제",
-      "source_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05Z2hVUE5DY1cxYTV1ODFQOVZkRjB2OElibFRSRWNUMEVBcGNveEMtMW53ZUt0UHBGeEJIZDhId3RMXzR3Q3luelNIUE5XSjBiSF9ydFRfdEVRUQ?oc=5",
-      "related_keywords": [
-        "부동산",
-        "잠길라",
-        "난해한",
-        "4가지"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-300f7ba1897b5d1972",
-      "type": "past",
-      "category": "부동산",
-      "title": "주택 보유세를 올리면 집값은 잡힐까[라정주의 경제터치]",
-      "summary": "주택 보유세를 올리면 집값은 잡힐까[라정주의 경제터치] 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
-      "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:40:02+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "sisajournal.com",
-      "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93MloxN1lzR0tKZXlYOGpIWFFSQzZPMHZSazVFVjlmZjRXeXpWajhmVXZCdmZWanFpY1NPUk9UQXJlUThsM2hlanZvbi1zcDQ5ME9fVHljSnBaR1dtVkdaRFZ1WnhqX2VZS3YxRzJidVB3WDTSAXNBVV95cUxPdzJaMTdZc0dLSmV5WDhqSFhRUkM2TzB2Ums1RVY5ZmY0V3l6Vmo4ZlV2QnZmVmpxaWNTT1JPVEFyZVE4bDNoZWp2b24tc3A0OTBPX1R5Y0pwWkdXbVZHWkRWdVp4al9lWUt2MUcyYnVQd1g0?oc=5",
-      "related_keywords": [
-        "부동산",
-        "보유세를",
-        "라정주의",
-        "경제터치"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3b09d2e62ebdd0ff74",
@@ -2882,7 +2854,7 @@
       "summary": "'집값 파이터' 된 공대 출신 변호사 \"데이터가 비밀병기\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:25:48+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2899,8 +2871,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7cdc809788fbc88839",
@@ -2927,8 +2899,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9d35d36ff792cb874c",
@@ -2938,7 +2910,7 @@
       "summary": "소형 아파트 매매 51% 늘었다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:17:20+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2955,8 +2927,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8d2b3b733cf1a5af0d",
@@ -2966,7 +2938,7 @@
       "summary": "상반기 서울 아파트 매수자 46%가 '생애 첫 집' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:16:52+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -2983,8 +2955,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f7224a0b22750cc823",
@@ -3011,8 +2983,36 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-29eac3cbe3162c353f",
+      "type": "past",
+      "category": "부동산",
+      "title": "주택 보유세를 올리면 집값은 잡힐까[라정주의 경제터치]",
+      "summary": "주택 보유세를 올리면 집값은 잡힐까[라정주의 경제터치] 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
+      "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
+      "importance_score": 94.9,
+      "published_at": "2026-08-04T15:52:07+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "시사저널",
+      "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51R2p4Qnczbk0yTHhDVmdLWl9MMS0yQU5lcTR3VzRPbk1GZ2lqc0F4UHp5aXdxaUd0WGJUM0JLZWlBRWZQNHRmanptTk5KTFdral9mSnVjVV9LYWpEeXBOZ3F5bEhOSTc5c3ljRFdQUdIBc0FVX3lxTE93MloxN1lzR0tKZXlYOGpIWFFSQzZPMHZSazVFVjlmZjRXeXpWajhmVXZCdmZWanFpY1NPUk9UQXJlUThsM2hlanZvbi1zcDQ5ME9fVHljSnBaR1dtVkdaRFZ1WnhqX2VZS3YxRzJidVB3WDQ?oc=5",
+      "related_keywords": [
+        "부동산",
+        "보유세를",
+        "라정주의",
+        "경제터치"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7d8760652533907023",
@@ -3039,8 +3039,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8a5c1a5017c17ec291",
@@ -3067,8 +3067,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3d63d3cb4486579c2b",
@@ -3095,8 +3095,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-af95245a6d0328731d",
@@ -3123,8 +3123,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b638d2dd126e3c780c",
@@ -3134,7 +3134,7 @@
       "summary": "총 주택 중 공동주택 비중 80% 넘겨 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 94.1,
+      "importance_score": 94.0,
       "published_at": "2026-08-04T11:19:52+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3151,8 +3151,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-80ec82e59b4a14093c",
@@ -3162,7 +3162,7 @@
       "summary": "부동산원, ‘부동산분석’ 논문 공모…8월 30일까지 접수 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 94.1,
+      "importance_score": 94.0,
       "published_at": "2026-08-04T11:19:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3179,8 +3179,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9323f9d29e0f96bebc",
@@ -3207,8 +3207,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ed21bb79e9216f1a6b",
@@ -3235,8 +3235,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-938e79913c1af6c447",
@@ -3263,8 +3263,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e9f7805f0117633a76",
@@ -3291,8 +3291,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8f27184dc177503ec7",
@@ -3302,7 +3302,7 @@
       "summary": "학교 옆 아파트에 청약 몰렸다…3040 움직인 '학세권' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "지역과 주택 유형에 따라 영향이 다를 수 있어 세부 조건을 나눠 볼 필요가 있습니다.",
       "impact": "주거 비용과 거래 심리, 공급 계획에 영향을 줄 수 있습니다.",
-      "importance_score": 93.7,
+      "importance_score": 93.6,
       "published_at": "2026-08-04T08:57:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3319,8 +3319,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-55bca0622f438175e3",
@@ -3347,8 +3347,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2953cfdf740186953d",
@@ -3358,7 +3358,7 @@
       "summary": "백악관, 첨단AI 보안 검증방안 확정…AI기업과 비공개 논의키로(종합) 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 96.2,
+      "importance_score": 96.1,
       "published_at": "2026-08-04T08:50:51+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3375,8 +3375,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-013474b247938bb5f0",
@@ -3403,8 +3403,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c4bd7d217060e63a3e",
@@ -3431,8 +3431,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-89d58251f35c6eabb0",
@@ -3442,7 +3442,7 @@
       "summary": "\"AGI 넘어 RSI로\"…구글이 천문학적 AI 투자를 지속하는 이유 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:54:44+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3459,8 +3459,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-bc502d72d7cb951f78",
@@ -3470,7 +3470,7 @@
       "summary": "[배종찬의 보안 빅데이터] ‘AI 스스로 해킹’하는 시대, 통제 가능한가 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:51:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3487,8 +3487,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-cb16362dd98f5cb798",
@@ -3515,8 +3515,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ebbe1e20f04c66368a",
@@ -3543,8 +3543,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fe8317d50c4cd1bd4b",
@@ -3554,7 +3554,7 @@
       "summary": "AI 모멘텀의 새로운 기준, 일하는 방식의 전환 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:11:32+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3571,8 +3571,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b70fd0f2dff78d4b44",
@@ -3599,8 +3599,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-16b10895d2af31157d",
@@ -3627,8 +3627,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a4d5b381cced957257",
@@ -3638,7 +3638,7 @@
       "summary": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 | 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:11:27+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3655,8 +3655,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ce0f1cc8ddc5710fee",
@@ -3683,8 +3683,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b0dae1cfffd29ff4b3",
@@ -3711,8 +3711,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-505626d3c85120e19c",
@@ -3722,7 +3722,7 @@
       "summary": "LGU+, 보안 기업 파고네트웍스 인수... “위협 탐지·분석·대응 내재화” 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T15:04:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3739,8 +3739,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-09ebfa2841444b30f9",
@@ -3750,7 +3750,7 @@
       "summary": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T15:00:02+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3767,8 +3767,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-75eae602b18f7d14a3",
@@ -3795,8 +3795,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d446670450bf9e128e",
@@ -3806,7 +3806,7 @@
       "summary": "테이텀, ISEC 2026서 ‘테이텀 CNAPP’으로 클라우드 보안 정조준 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.6,
+      "importance_score": 94.5,
       "published_at": "2026-08-04T14:03:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3823,8 +3823,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c5159c800301d3fb8f",
@@ -3834,7 +3834,7 @@
       "summary": "충남도 공유재산 무단 점유, AI가 찾아낸다…시스템 구축 착수 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.6,
+      "importance_score": 94.5,
       "published_at": "2026-08-04T14:00:20+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3851,8 +3851,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fd085aa6936c11633b",
@@ -3879,8 +3879,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4e894c3ab9b41ecb02",
@@ -3890,11 +3890,11 @@
       "summary": "AI고속도로 핵심 인프라, '국가 AI 컴퓨팅센터' 구축 첫 삽! - 전체 | 카드/한컷 | 멀티미디어 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.5,
+      "importance_score": 94.4,
       "published_at": "2026-08-04T13:29:48+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "korea.kr",
+      "source_name": "대한민국 정책브리핑",
       "source_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQThHVWl4Z2pPZXRDUG5GemZOd1p2blVXV0ZaVDE3SUwwVmFtRUJ0dl8wUDhHbE5udlpMWVpVc25oU1l6NU1wcVJscEFXOUZ2cFVkd2tDMHRWMnRlWjVCOGlFcnZKOUFuRElwSVQ3b05Zck5tTGlpSDV4ZkZXSWNjWnMwb3NmMEZZd1ZtU3Jn?oc=5",
       "related_keywords": [
         "과학·기술",
@@ -3907,8 +3907,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-06eb0c114f060a5d3a",
@@ -3935,8 +3935,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7abfa2a496cb87eb4f",
@@ -3946,7 +3946,7 @@
       "summary": "SK하이닉스, 차세대 AI 메모리 HBF 표준 규격 첫 공개 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.4,
+      "importance_score": 94.3,
       "published_at": "2026-08-04T12:59:30+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3963,8 +3963,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a937bec50f0339cd50",
@@ -3974,7 +3974,7 @@
       "summary": "백악관, 주요 AI 기업 실무자 소집...‘자발적 감독 방안’ 최종 검토 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.3,
+      "importance_score": 94.2,
       "published_at": "2026-08-04T12:15:48+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -3991,8 +3991,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-118c3ab5a448348bfc",
@@ -4002,7 +4002,7 @@
       "summary": "국방부, 군 내 보안 전문기관 ‘국방보안지원단’ 창설 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "기술 발표 자체보다 상용화 시점과 실제 적용 범위를 함께 살펴보면 좋겠습니다.",
       "impact": "기술 경쟁과 산업 적용 속도에 영향을 줄 수 있습니다.",
-      "importance_score": 94.2,
+      "importance_score": 94.1,
       "published_at": "2026-08-04T11:39:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4019,8 +4019,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-26875be5c994159d53",
@@ -4047,8 +4047,36 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-c60f08559328cbd48d",
+      "type": "past",
+      "category": "교육",
+      "title": "사이버한국외대·재미한국학교協, 미주 한국학교 교원 전문성 강화 MOU:동아경제신문 & daenews.co.kr",
+      "summary": "사이버한국외대·재미한국학교協, 미주 한국학교 교원 전문성 강화 MOU:동아경제신문 & daenews.co.kr 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
+      "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
+      "importance_score": 95.3,
+      "published_at": "2026-08-04T18:14:48+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "동아경제",
+      "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aUXRUc05sd3hxai0wcTFOY2pVV2xtQmtfNEFmcWtxSDVmbFUtRlJUVFRoZWxzRXRnWkhEQy1LTWRLMkNvQmVIVVhyNzRCNVlWMVBBbHZnR1lEdXN3TnhWSk5n0gFiQVVfeXFMTlpRdFRzTmx3eHFqLTBxMU5jalVXbG1Ca180QWZxa3FINWZsVS1GUlRUVGhlbHNFdGdaSERDLUtNZEsyQ29CZUhVWHI3NEI1WVYxUEFsdmdHWUR1c3dOeFZKTmc?oc=5",
+      "related_keywords": [
+        "교육",
+        "사이버한국외대",
+        "daenews",
+        "재미한국학교"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8ac7815430cee71677",
@@ -4075,8 +4103,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-bbfb68eaa3d5e57b4a",
@@ -4086,7 +4114,7 @@
       "summary": "경남과학고, 대한민국 학생창의력 대회 금상 수상 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:53:38+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4103,8 +4131,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c12cf094aa6c3e3176",
@@ -4114,7 +4142,7 @@
       "summary": "대구 학생들, 2026 대한민국학생창의력챔피언대회서 빛났다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:44:41+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4131,8 +4159,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2b70d2308c06135def",
@@ -4142,7 +4170,7 @@
       "summary": "대구 대건중, 대한민국학생창의력챔피언대회 대상…창의성·문제해결력 돋보여 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:23:52+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4159,8 +4187,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e695acd3a96ab93c05",
@@ -4170,7 +4198,7 @@
       "summary": "서울교대, 서울기초학력지원센터 운영 본격화 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:21:55+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4187,8 +4215,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fc03612ce843328a8b",
@@ -4198,7 +4226,7 @@
       "summary": "성신여대, 전국 고교생 전공체험 프로그램 운영 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:15:18+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4215,8 +4243,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-86305061254b91868f",
@@ -4226,7 +4254,7 @@
       "summary": "이화여대, 교원양성기관 AI 교육과정 개발 지원사업 선정 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:10:38+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4243,8 +4271,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f786ee5080f3c7f434",
@@ -4271,8 +4299,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fb6684b5aa97ff49eb",
@@ -4299,8 +4327,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2ad1654901346627e0",
@@ -4327,8 +4355,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b79d34870e485139ad",
@@ -4338,7 +4366,7 @@
       "summary": "이주배경청년 정착 의지 높지만 지원은 부족 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:42:04+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4355,8 +4383,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1e5a61b913b6358d1f",
@@ -4383,8 +4411,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d567cde9a9dbe0f8d7",
@@ -4411,8 +4439,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-24caab0865d6fbb9bf",
@@ -4422,7 +4450,7 @@
       "summary": "후반기 국회 교육위 첫발…여·야 간사 선임 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:08:21+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4439,8 +4467,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1d5ca7a99f83abc724",
@@ -4450,7 +4478,7 @@
       "summary": "사이버한국외대·재미한국학교협의회(NAKS), 교육협력 협약 체결 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:04:31+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4467,8 +4495,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-993491beeab792a854",
@@ -4495,8 +4523,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-6bfcb24d92746c1d05",
@@ -4523,8 +4551,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5ba2b19672af034218",
@@ -4551,8 +4579,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a575d51961f282b650",
@@ -4579,8 +4607,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8107fbe82ec5999e2b",
@@ -4590,7 +4618,7 @@
       "summary": "‘부실 사립대학 폐교법’ 시행령 국무회의 통과 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:43:36+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4607,8 +4635,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-efe98ad830b366c125",
@@ -4618,7 +4646,7 @@
       "summary": "일자리 밖 청년 집중교육 ‘부트캠프’ 대학 지원 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:40:35+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4635,8 +4663,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-93f4c771dc0de6a95a",
@@ -4646,7 +4674,7 @@
       "summary": "교육 예산 깎겠다는 정부 규탄한다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
       "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:33:52+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4663,36 +4691,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-dd7374a9764a0375b4",
-      "type": "past",
-      "category": "교육",
-      "title": "동양대 연기예술학과, 대한민국 대학연극제 앙상블상 수상",
-      "summary": "동양대 연기예술학과, 대한민국 대학연극제 앙상블상 수상 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "적용 대상과 시행 시점이 누구에게 달라지는지 후속 안내를 확인해 보세요.",
-      "impact": "학생·학부모와 교육 현장의 준비에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
-      "published_at": "2026-08-04T15:30:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "한국대학신문",
-      "source_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GRmdrcXJiVlpiWWxpZHBFM2o4SXFnMEpYNVlreUFLVll4cFQyUEJRSzBlRWZGOFZtYUp3Vk9GTFZsTmNjdnVwQzZuY3FUNDZ1SFFWTTRHUU5Zd1huMTVSVmVGYm5Bdw?oc=5",
-      "related_keywords": [
-        "교육",
-        "연기예술학과",
-        "대학연극제",
-        "대한민국"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8ee4635035a11d0018",
@@ -4702,7 +4702,7 @@
       "summary": "현대자동차그룹은 미국 대관 업무를 총괄하는 워싱턴DC 사무소장에 미국 국무부 출신 마이클 클라이네를 임명했다고...",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:01:44+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4719,8 +4719,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-57ecfde6bd0344edbf",
@@ -4730,7 +4730,7 @@
       "summary": "한국에 최근 부임한 미셸 스틸 주한미국대사가 4일 조현 외교부 장관을 만나며 대사로서 공식 활동을 개시...",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:00:14+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4747,8 +4747,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f371e451c794abbd0d",
@@ -4758,7 +4758,7 @@
       "summary": "한종구 특파원 김철문 통신원 = 대만해협의 군사적 긴장이 고조되는 속에 중국군 침공을 상정한 대만의 연례 합동군사훈...",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:26:12+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4775,8 +4775,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-87f74a54194863b600",
@@ -4786,7 +4786,7 @@
       "summary": "올해 상반기 국내에서 팔린 전기차 3대 중 1대는 중국에서 생산된 것으로 나타났다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:59:13+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4803,8 +4803,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-579e1da8f9203438b9",
@@ -4814,11 +4814,11 @@
       "summary": "대한민국 최초의 세계유산위 개최…행사를 넘어 '축제'로! 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:53:21+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "korea.kr",
+      "source_name": "대한민국 정책브리핑",
       "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMmgwSG1VU0cxQ0NXMTlTRlFEd2M0MURYZll1TmdoTHhBNkJCMy1MVkQ0bmZ3RVhILXlsbG5JaUJVeHhGZ0sxc2FPZW5hc0hHUzhCTldhWXZSOEhBTF9pZ3ZMenhINFlMQWFXOU90cjZ5XzQtTHBWTjE4cDY2aVJmMGhkSlE0d21BM1VfU0JwLUJERWJ1VzhsWmJB?oc=5",
       "related_keywords": [
         "국제",
@@ -4831,8 +4831,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1cfbfd5831819eb66b",
@@ -4842,7 +4842,7 @@
       "summary": "‘독도는 일본땅’ 주장한 다카이치…민주 “중요한 이웃? 매우 기만적” 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:26:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4859,8 +4859,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a5e7c501be541c1fca",
@@ -4870,7 +4870,7 @@
       "summary": "일 방위백서, 22년째 '독도는 일본땅' 억지...3년 연속 \"한국은 파트너\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:12:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4887,8 +4887,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b4c80880380a04b889",
@@ -4898,7 +4898,7 @@
       "summary": "\"美, 일본·캐나다 등 5개국 외교 공관 폐쇄 추진\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:11:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4915,8 +4915,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9362222357bc70ec6a",
@@ -4943,8 +4943,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d4a2b5f3f668b1b3bd",
@@ -4954,7 +4954,7 @@
       "summary": "중국엔 지재권 칼날, 일본 애니는 무단 활용···일본 정부, ‘트럼프 나루토’에 공식 항의 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 94.9,
+      "importance_score": 94.8,
       "published_at": "2026-08-04T15:39:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4971,8 +4971,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-99c9f53ba632295e2f",
@@ -4982,7 +4982,7 @@
       "summary": "이노크라스, 3100만달러 투자 유치…미국 암 정밀진단 시장 공략 속도 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T15:06:28+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -4999,8 +4999,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-aeb14913737bf34a07",
@@ -5010,7 +5010,7 @@
       "summary": "일본 방위백서 ’독도는 일본땅’ 22년째 억지 주장 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 94.6,
+      "importance_score": 94.5,
       "published_at": "2026-08-04T14:02:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5027,8 +5027,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d65b2782951c45ca2e",
@@ -5055,8 +5055,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-23ef6b5257793ded2b",
@@ -5083,8 +5083,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-945029c93a86e2cd54",
@@ -5111,8 +5111,36 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-095aa275d197dfa879",
+      "type": "past",
+      "category": "국제",
+      "title": "50도까지 치솟는다고? 중국도 일본도 극심한 무더위…인명피해 잇따라",
+      "summary": "50도까지 치솟는다고? 중국도 일본도 극심한 무더위…인명피해 잇따라 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
+      "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
+      "importance_score": 94.3,
+      "published_at": "2026-08-04T12:56:00+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "KBS 뉴스",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qLUpHc041X0R4S3VMVkFxM2JlcmkyUE53VEFXZUU3aXByWnd3eTZNY1kzTXNOLWkxeHpFMXJIQjltSm5iSjFIUEFMU0M4amY0eVdVYkw0TzVwWTA?oc=5",
+      "related_keywords": [
+        "국제",
+        "50도까지",
+        "치솟는다고",
+        "인명피해"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b076fc7fbe23da7e20",
@@ -5139,8 +5167,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f354924a429acdb4d0",
@@ -5167,8 +5195,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e26bd057adcca6646e",
@@ -5195,8 +5223,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d7952d6fce9e16ee9f",
@@ -5223,8 +5251,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-ffa71cb997e65469de",
@@ -5251,8 +5279,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9fb5f48d5639c503c8",
@@ -5262,7 +5290,7 @@
       "summary": "트럼프 \"이란과 대화 진행 중\"...이란 \"미국과 협상 없어\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
       "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 94.0,
+      "importance_score": 93.9,
       "published_at": "2026-08-04T10:36:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5279,8 +5307,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-372f2e0996033aae62",
@@ -5307,8 +5335,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2dbf5a346d556d6a8a",
@@ -5335,36 +5363,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-b8451967131a25945c",
-      "type": "past",
-      "category": "국제",
-      "title": "오늘 회담하는 미·이란…일본, 지진 복구에 200억엔",
-      "summary": "오늘 회담하는 미·이란…일본, 지진 복구에 200억엔 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "현지 발표와 국내 파급효과 사이에는 시차가 있어 후속 보도를 함께 보는 게 좋습니다.",
-      "impact": "외교·안보와 국내 경제 환경에 파급될 수 있습니다.",
-      "importance_score": 93.8,
-      "published_at": "2026-08-04T09:26:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "연합뉴스TV",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5CNFZVeWdvbWpublJwR09xTEI3bFdQeS0xNF83Y3haYVZzMTBvc3ZGWDdJdS1fTkxtUWx3MjFGUklyXzZEckNfdXQtdHpHU011NTRZcDNTOW5yRlhmUkpvcDM2M2pmSVk?oc=5",
-      "related_keywords": [
-        "국제",
-        "200억엔",
-        "회담하는",
-        "복구에"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b5082bd10e41cdda4a",
@@ -5374,7 +5374,7 @@
       "summary": "김영훈 고용노동부 장관은 4일 취업을 준비하는 청년들이 첫 실무경력을 쌓을 수 있도록 \"국가가 청년의 첫 경력...",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 97.8,
+      "importance_score": 97.7,
       "published_at": "2026-08-04T17:48:23+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5391,8 +5391,36 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-c5cb514734b66110c5",
+      "type": "past",
+      "category": "정치",
+      "title": "헤즈볼라 수장 \"시리아 새 정부와 만남 반대 안 해\"",
+      "summary": "김상훈 특파원 = 이란의 지원을 받는 레바논 무장 정파 헤즈볼라의 수장이 과거 자신들의 우호 세력인 바샤르 알아사드 정권을 ...",
+      "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
+      "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
+      "importance_score": 96.0,
+      "published_at": "2026-08-04T21:55:52+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "연합뉴스",
+      "source_url": "https://www.yna.co.kr/view/AKR20260804166400079",
+      "related_keywords": [
+        "정치",
+        "헤즈볼라",
+        "시리아",
+        "정부와"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.92,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b52e4458d894c6b91f",
@@ -5402,7 +5430,7 @@
       "summary": "이도연 특파원 = 일본 정부가 지난달 28일 발생한 규슈 구마모토 지진을 '격심재해'(특별재해)로 지정하는 방안을 추진한다고 ...",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.9,
+      "importance_score": 95.8,
       "published_at": "2026-08-04T21:06:38+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5419,8 +5447,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8f39c76fb782e67cb9",
@@ -5430,7 +5458,7 @@
       "summary": "이 대통령 리더쉽은 멍부형? 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.7,
+      "importance_score": 95.6,
       "published_at": "2026-08-04T20:02:45+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5447,8 +5475,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-70be6dfba83808cd4b",
@@ -5475,8 +5503,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-cbd273b5f7cfa4ff15",
@@ -5486,7 +5514,7 @@
       "summary": "차기 대한축구협회장을 뽑는 선거인단 규모가 약 2만명으로 크게 확대될 전망이다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.5,
+      "importance_score": 95.4,
       "published_at": "2026-08-04T18:53:28+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5503,8 +5531,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f8de5dd13927675c22",
@@ -5514,7 +5542,7 @@
       "summary": "[숏폼] 장동혁 \"이재명 대통령 ,대한민국 대통령으로 인정 안 해\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:22:05+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5531,8 +5559,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d471e3fe072bea41fe",
@@ -5542,7 +5570,7 @@
       "summary": "독도 영유권 또 주장한 일본 방위백서…한국 정부 “강력 항의, 즉각 철회 요구” 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.4,
+      "importance_score": 95.3,
       "published_at": "2026-08-04T18:21:02+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5559,8 +5587,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c0feb021831ff01a83",
@@ -5587,8 +5615,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-49e2a4dedcd60dcb2d",
@@ -5615,8 +5643,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-9176d864b1f407b310",
@@ -5626,7 +5654,7 @@
       "summary": "형사소송법 일부개정법률 공포안이 4일 국무회의에서 의결됐다. 대통령 서명과 관보 게재를 ...",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:56:22+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5643,8 +5671,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-0de87ba25b76d25de6",
@@ -5671,8 +5699,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-30d1e23b60a2dea9a5",
@@ -5699,8 +5727,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f8b4a505db37b86387",
@@ -5710,7 +5738,7 @@
       "summary": "'사퇴 압박'에 직면한 잔니 인판티노 국제축구연맹(FIFA) 회장이 자리를 지키기 위해 도널드 트럼프 미국 행...",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:24:13+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5727,8 +5755,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-46b6517e77fbd496ca",
@@ -5755,8 +5783,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a9e9427779050e5619",
@@ -5783,8 +5811,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-981edceaf00830307a",
@@ -5811,8 +5839,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7da9bf40e322bb8119",
@@ -5839,8 +5867,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d3d1497d57e9a7849d",
@@ -5850,7 +5878,7 @@
       "summary": "블룸버그 \"한국 투자 부적합국가 되나...개미만 비명\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 94.7,
+      "importance_score": 94.6,
       "published_at": "2026-08-04T14:28:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5867,8 +5895,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5ed5bd1d82607624f7",
@@ -5878,7 +5906,7 @@
       "summary": "FT \"증시 띄우려던 李대통령…코스피 폭락에 정치적 부메랑\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
       "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 94.7,
+      "importance_score": 94.6,
       "published_at": "2026-08-04T14:27:55+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -5895,8 +5923,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c5ca5e0860dfd13266",
@@ -5923,8 +5951,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-17b60142a4c7b8284a",
@@ -5951,36 +5979,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-682d360bffe373486f",
-      "type": "past",
-      "category": "정치",
-      "title": "블룸버그 \"한국, 中처럼 '투자 부적합' 우려 … 정부 정책이 개미만 희생시켜\"",
-      "summary": "블룸버그 \"한국, 中처럼 '투자 부적합' 우려 … 정부 정책이 개미만 희생시켜\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "발언보다 실제 의결·시행 일정이 어떻게 정해지는지가 중요합니다.",
-      "impact": "정책 추진과 국회 논의의 방향에 영향을 줄 수 있습니다.",
-      "importance_score": 94.4,
-      "published_at": "2026-08-04T13:10:35+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "뉴데일리",
-      "source_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5HMmVxeXJTZzNJaG1fd0pzb0QzSEtCQ1BUZm9iaDFXM1NfY3Jtdk41aWlaV0FOTUpDZ2pZOVdUX3VodDhRSzRud25keWdqR2ducHk3VUl3cWlpaE9pd1hTbW5TbDJNdjQ2dU1VR2dLUlZYYjN3bmpTMUxHUdIBgAFBVV95cUxPck05cUI1eEdfSW5naFh6RmtGelBxSnoxQUJxNzJ4b19WXzJpcUNZLTY3VDlmU05pcWRCRTJOMU4wc3g1WnZuY2lPRWd1OGU3ZFdhck80TWx4RGF1X0tOcFprZnVmWUJfU0FxeWlOM1YtRndlMnpkMy16b29LcTBIQQ?oc=5",
-      "related_keywords": [
-        "정치",
-        "블룸버그",
-        "희생시켜",
-        "부적합"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4b238d134810ca38be",
@@ -6007,36 +6007,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-3581f034d82171a9c0",
-      "type": "past",
-      "category": "문화",
-      "title": "문화누리카드 체험담 공모…총상금 750만원",
-      "summary": "문화누리카드 체험담 공모…총상금 750만원 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
-      "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.6,
-      "published_at": "2026-08-04T19:45:20+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "ABC뉴스",
-      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zenFRWnBidTdocm4zYWFFUlNRYnp1RTlZT2ViUjJFTEVwMi02U0VjVnpNWmpHX1R6NmN1d1kxLVYzd2huTlBKeUN3N0pzYUdOakU0OTZxazI1MFZzME1Vd2QxUmRQUEXSAWdBVV95cUxNM3pxUVpwYnU3aHJuM2FhRVJTUWJ6dUU5WU9lYlIyRUxFcDItNlNFY1Z6TVpqR19UejZjdXdZMS1WM3dobk5QSnlDdzdKc2FHTmpFNDk2cWsyNTBWczBNVXdkMVJkUFBF?oc=5",
-      "related_keywords": [
-        "문화",
-        "문화누리카드",
-        "750만원",
-        "체험담"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4925969be623e394dd",
@@ -6063,8 +6035,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-bcda37a458029e77d1",
@@ -6091,8 +6063,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-20ae51af6082cf1380",
@@ -6119,8 +6091,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-fbabd34d54778d419f",
@@ -6130,7 +6102,7 @@
       "summary": "보성도서관, 8월 갤러리 休 ‘한국 영화 포스터’ 전시 개최 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.1,
+      "importance_score": 95.0,
       "published_at": "2026-08-04T16:50:27+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6147,8 +6119,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a39262f042d5ae089a",
@@ -6175,8 +6147,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-99b065672c14b0fd08",
@@ -6186,7 +6158,7 @@
       "summary": "마룬파이브, 3년 만에 내한…1월27일 공연 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
+      "importance_score": 94.9,
       "published_at": "2026-08-04T16:09:08+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6203,8 +6175,36 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-8d4b505009111fbfa5",
+      "type": "past",
+      "category": "문화",
+      "title": "불볕더위속 한국어 배우러 모국찾은 재일동포 어린이들",
+      "summary": "불볕더위속 한국어 배우러 모국찾은 재일동포 어린이들 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
+      "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
+      "importance_score": 94.9,
+      "published_at": "2026-08-04T15:50:11+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "재외동포신문",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBrNGFIMExqRno0WUMwU0FRWW1MVXFpTkRNN0ZnYzJubVlJUXdkRktKeTZGNjJhTTJGZ3pOUnV6bno3RjVrU0E0T00zZDd4M25oSGMxdUFQbndDd0lsOUkzNFYzZUlGVXhNb1hJQg?oc=5",
+      "related_keywords": [
+        "문화",
+        "불볕더위속",
+        "모국찾은",
+        "재일동포"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d994210f07418b2449",
@@ -6231,8 +6231,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c39724acd18a44e90d",
@@ -6242,7 +6242,7 @@
       "summary": "[동포의 창] 알마티서 K-컬처로 하나된 부산대·카자흐 고려인 청년 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.8,
+      "importance_score": 94.7,
       "published_at": "2026-08-04T14:57:59+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6259,8 +6259,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-bc72e7aee481b2b8f6",
@@ -6270,7 +6270,7 @@
       "summary": "인도 톱스타 아누쉬카 센, 한국영화 첫 주연… ‘제주 올레’로 韓·인도 잇는다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.7,
+      "importance_score": 94.6,
       "published_at": "2026-08-04T14:36:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6287,8 +6287,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-215202dfcd9b6e6161",
@@ -6298,7 +6298,7 @@
       "summary": "'나루토' 주제가 부른 카나분, 12월 첫 내한 공연 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.7,
+      "importance_score": 94.6,
       "published_at": "2026-08-04T14:25:05+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6315,8 +6315,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e4bf1c6bb5e177ad5f",
@@ -6343,8 +6343,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-959e57d2b72b8e50b2",
@@ -6354,7 +6354,7 @@
       "summary": "마룬파이브, 내년 1월 '일산 킨텍스' 내한공연 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.6,
+      "importance_score": 94.5,
       "published_at": "2026-08-04T13:56:51+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6371,8 +6371,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-7765813992efa0758c",
@@ -6382,7 +6382,7 @@
       "summary": "마룬5, 3년 만에 내한공연…내년 1월 킨텍스 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.6,
+      "importance_score": 94.5,
       "published_at": "2026-08-04T13:52:31+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6399,8 +6399,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-f24f8ed1287dd8bd4c",
@@ -6410,7 +6410,7 @@
       "summary": "팝 밴드 마룬파이브, 내년 1월 3년 만의 내한 공연 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.5,
+      "importance_score": 94.4,
       "published_at": "2026-08-04T13:22:45+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6427,8 +6427,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4a9de9606dd68f1227",
@@ -6455,8 +6455,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-3c12451a9c7ea58bd0",
@@ -6466,7 +6466,7 @@
       "summary": "문체부.한국문화예술교육진흥원, '2026 문화예술교육사 활동 수기 공모전' 연다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "공개 일정과 관람·시청 방법이 바뀔 수 있으니 공식 안내를 확인해 보세요.",
       "impact": "콘텐츠 소비와 문화 산업의 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 94.2,
+      "importance_score": 94.1,
       "published_at": "2026-08-04T11:52:55+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6483,8 +6483,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-57c51638bf01cd4b01",
@@ -6511,8 +6511,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5943ce6471ed38fb4d",
@@ -6539,8 +6539,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-c5f2b4b347639a2032",
@@ -6567,8 +6567,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-16b32975a3b8bcb7ec",
@@ -6595,8 +6595,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1b0ec93a4571e7e374",
@@ -6623,8 +6623,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-2dc897612e3047e3c2",
@@ -6634,7 +6634,7 @@
       "summary": "프로야구 잠실·광주 경기, 폭염중대경보에 취소 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 97.3,
+      "importance_score": 97.2,
       "published_at": "2026-08-04T14:58:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6651,8 +6651,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d51b36ab5c58476293",
@@ -6679,8 +6679,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-66a8aa6e14c5254b02",
@@ -6690,7 +6690,7 @@
       "summary": "’폭염중대경보’ 프로야구 잠실·광주 경기 취소 결정 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 97.0,
+      "importance_score": 96.9,
       "published_at": "2026-08-04T13:18:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6707,8 +6707,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-8d8fe3eeb46bcdc1e4",
@@ -6735,8 +6735,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e750bf5cadc259bb1e",
@@ -6763,8 +6763,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-5f3a132ed8b29f8474",
@@ -6774,7 +6774,7 @@
       "summary": "[속보]폭염중대경보 시 오후 1시 전 프로야구 경기 취소 결정… KB0 \"관중·선수 안전 최우선\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 96.9,
+      "importance_score": 96.8,
       "published_at": "2026-08-04T12:49:12+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6791,8 +6791,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-25778ae15095c7676c",
@@ -6802,7 +6802,7 @@
       "summary": "프로야구, 폭염중대경보시 오후 1시까지 경기 취소 결정 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 96.7,
+      "importance_score": 96.6,
       "published_at": "2026-08-04T11:52:44+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6819,8 +6819,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-20629ecf8ea061d646",
@@ -6830,7 +6830,7 @@
       "summary": "KBO, 폭염중대경보 발효되면 오후 1시 전까지 경기 취소 결정 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 96.7,
+      "importance_score": 96.6,
       "published_at": "2026-08-04T11:44:08+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6847,8 +6847,36 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "past-390ab07e6a758da008",
+      "type": "past",
+      "category": "스포츠",
+      "title": "'캡틴' 김민재 선발 나선 뮌헨, 제주와 프리시즌 경기 2-1 승리",
+      "summary": "2년 만에 한국을 찾은 독일 프로축구 분데스리가의 '명가' 바이에른 뮌헨이 제주도에서 펼쳐진 K리그1 제주 ...",
+      "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
+      "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
+      "importance_score": 96.0,
+      "published_at": "2026-08-04T22:00:39+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "연합뉴스",
+      "source_url": "https://www.yna.co.kr/view/AKR20260804166900007",
+      "related_keywords": [
+        "스포츠",
+        "프리시즌",
+        "김민재",
+        "제주와"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.92,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1f73c06407d53089b3",
@@ -6875,8 +6903,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-64ed6924837117ac66",
@@ -6903,8 +6931,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-dd75243467ecf3500b",
@@ -6931,8 +6959,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-22a497aa3115566966",
@@ -6942,7 +6970,7 @@
       "summary": "경기 남부권 5개 시에 내려진 오존주의보가 4일 오후 9시 해제됐다고 환경부 한국환경공단이 전했다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.9,
+      "importance_score": 95.8,
       "published_at": "2026-08-04T21:13:35+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6959,8 +6987,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-204c6d7cfff590f731",
@@ -6970,7 +6998,7 @@
       "summary": "독일은 물론 유럽에서도 최고의 클럽 중 하나로 꼽히는 분데스리가의 명문 바이에른 뮌헨이 제주도를 찾아와 폭염...",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.9,
+      "importance_score": 95.8,
       "published_at": "2026-08-04T21:08:17+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -6987,8 +7015,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-a6480a91af9445fab5",
@@ -6998,7 +7026,7 @@
       "summary": "한국 축구 국가대표팀 수비의 핵심 김민재가 제주에서 펼쳐지는 소속팀 바이에른 뮌헨(독일)의 프리시즌 경기에 ...",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.6,
+      "importance_score": 95.5,
       "published_at": "2026-08-04T19:31:30+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -7015,8 +7043,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-d920794f969004976d",
@@ -7043,8 +7071,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-e6940e39c0e475efc1",
@@ -7071,8 +7099,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-93af1eb9dde359fb4b",
@@ -7086,7 +7114,7 @@
       "published_at": "2026-08-04T18:40:04+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "sisajournal.com",
+      "source_name": "시사저널",
       "source_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5oRTVXWmxCZVFjNU16YVJxY1BFWXA4NW1ZYmQwUU1US2t1QnZ2aTFtbjNTa0cteWNMYUN4bFQyZlBlaFk5bVVscHFNamV0MkFIbGxpYWhCSERCbFBLYTVpYlBZNWdZY2k5aVJCVWR0U0hXZDTSAXNBVV95cUxOaEU1V1psQmVRYzVNemFScWNQRVlwODVtWWJkMFFNVEtrdUJ2dmkxbW4zU2tHLXljTGFDeGxUMmZQZWhZOW1VbHBxTWpldDJBSGxsaWFoQkhEQmxQS2E1aWJQWTVnWWNpOWlSQlVkdFNIV2Q0?oc=5",
       "related_keywords": [
         "스포츠",
@@ -7099,8 +7127,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-4d4a1a5e46da92bcce",
@@ -7127,8 +7155,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-b5f92d80ba9ada294c",
@@ -7155,8 +7183,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-1543ddbb4521bec10f",
@@ -7166,7 +7194,7 @@
       "summary": "올 시즌 도입한 프로야구 아시아쿼터 제도의 가장 큰 혜택을 받은 구단은 LG 트윈스다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.3,
+      "importance_score": 95.2,
       "published_at": "2026-08-04T17:45:21+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -7183,8 +7211,8 @@
       "source_count": 1,
       "confidence": 0.92,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-6b518765b15cac7522",
@@ -7211,8 +7239,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "past-207aa7a3cb37491131",
@@ -7222,7 +7250,7 @@
       "summary": "야구 맞먹는 e스포츠 팬덤…협업상품 '불티' 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
       "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.2,
+      "importance_score": 95.1,
       "published_at": "2026-08-04T17:23:05+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
@@ -7239,64 +7267,8 @@
       "source_count": 1,
       "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-b9a3efda6527cd0760",
-      "type": "past",
-      "category": "스포츠",
-      "title": "[프로야구] 롯데, 한국건강관리협회와 팬 건강 지키기에 나서",
-      "summary": "[프로야구] 롯데, 한국건강관리협회와 팬 건강 지키기에 나서 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
-      "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
-      "published_at": "2026-08-04T16:22:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "뉴스핌",
-      "source_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJZlVPQ2ZEb3FGbjNtWDhCSU5UdW04Z0tCX0ZrVHIxV1Fad1I0LWVrMHAzMWVfMzgxeGE0dWp1YUdmYWNfNzlxYUlIRXZGeXhyclFOdnlQcnJLWTI1?oc=5",
-      "related_keywords": [
-        "스포츠",
-        "한국건강관리협회와",
-        "프로야구",
-        "지키기에"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "past-711266b3d637129f2e",
-      "type": "past",
-      "category": "스포츠",
-      "title": "세금 낭비 프로축구 시민구단 대표 9명 배임 혐의 등으로 고발",
-      "summary": "세금 낭비 프로축구 시민구단 대표 9명 배임 혐의 등으로 고발 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
-      "ai_comment": "경기 시간과 출전 명단은 직전까지 바뀔 수 있어 공식 발표를 다시 확인해 주세요.",
-      "impact": "경기 운영과 순위 경쟁, 팬들의 관전 흐름에 영향을 줄 수 있습니다.",
-      "importance_score": 95.0,
-      "published_at": "2026-08-04T16:19:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "한겨레",
-      "source_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1OGRZTzNzUDdrQ0d6VWV3QW5FNFF5SlJqdkdMRHJMRlFxdmt5QW81djY3ZzRKd2U5dGtxLTM2QWhZNk8wYXZCbjY3ZUpfMmdueF9ieUpKVGkwbmlyUnFpM3VJVmFaU0l1OFVPZFRQM2N3QQ?oc=5",
-      "related_keywords": [
-        "스포츠",
-        "프로축구",
-        "시민구단",
-        "등으로"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.82,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "upcoming-b05580dd16c551bb3c",
@@ -7323,8 +7295,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "upcoming-e653d937187e06de0f",
@@ -7351,8 +7323,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "upcoming-d5293f57330447c340",
@@ -7379,8 +7351,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "upcoming-489e0cc50e965abe11",
@@ -7435,344 +7407,344 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-66c2173411f81ae584",
+      "id": "stock_issue-594233669e1e224854",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(유가)진원생명과학 - 불성실공시법인지정예고",
-      "summary": "금융감독원 전자공시시스템에 ‘(유가)진원생명과학 - 불성실공시법인지정예고’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "150개에서 압축 또 압축…코스닥 승강제가 유발할 수급지형 변화는",
+      "summary": "150개에서 압축 또 압축…코스닥 승강제가 유발할 수급지형 변화는 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 98.0,
-      "published_at": "2026-08-04T18:56:00+09:00",
+      "importance_score": 89.2,
+      "published_at": "2026-08-03T08:19:55+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804800972",
+      "source_name": "연합인포맥스",
+      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ERk8zRnI5VTdyaVBqeXBHLUlvU1FIYnJZbHZpdU0wcjJPc1pTWWZWb202OHZCSXVzb0pyb3k4ZHp3X2s3NUdMdE82emtWaVE3WVZKQlpLR2t2Q2RmWGplMEtaRlpDLV9BX1FYTy1WT0w?oc=5",
       "related_keywords": [
         "증권",
-        "불성실공시법인지정예고",
-        "진원생명과학",
-        "유가"
+        "150개에서",
+        "승강제가",
+        "수급지형"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-8b511d0f178f3c8caa",
+      "id": "stock_issue-2f551192d5ef399f1a",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(유가)진원생명과학 - 주요사항보고서(유상증자결정)",
-      "summary": "금융감독원 전자공시시스템에 ‘(유가)진원생명과학 - 주요사항보고서(유상증자결정)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "한국 주식 ‘사팔사팔’... 외국인들 왜 이러나?",
+      "summary": "한국 주식 ‘사팔사팔’... 외국인들 왜 이러나? 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:36:00+09:00",
+      "importance_score": 89.9,
+      "published_at": "2026-08-03T12:28:25+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804000549",
+      "source_name": "조선일보",
+      "source_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPa0NqS0Juek81T0ZERW1xWkw0aktka0V3MXU1UG5FcHJwNDZPUW5qQjFvQ3YtWjdpYklxVFhNNFNQZEZNbzVGekNqSUNvdFhCTmkzMDlZbnVBQ05jQ3dyYjExR3FPLVk4QVY2eWwxam9fYmcwQmMtTHRyc25ScUF2ZEZZbUtpQ1RxZXZN?oc=5",
       "related_keywords": [
         "증권",
-        "주요사항보고서",
-        "진원생명과학",
-        "유상증자결정"
+        "사팔사팔",
+        "외국인들",
+        "이러나"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-36f89ab0ac25188430",
+      "id": "stock_issue-38a77220e22102c84d",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(코스닥)디에이치엑스컴퍼니 - 불성실공시법인지정 (공시번복)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)디에이치엑스컴퍼니 - 불성실공시법인지정 (공시번복)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "삼전·닉스 ‘팔자’에 또 빠진 코스피…코스닥, 매수 사이드카",
+      "summary": "삼전·닉스 ‘팔자’에 또 빠진 코스피…코스닥, 매수 사이드카 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 97.9,
-      "published_at": "2026-08-04T18:32:00+09:00",
+      "importance_score": 90.0,
+      "published_at": "2026-08-03T13:04:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900968",
+      "source_name": "한겨레",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YblpJbGVBUUtyQnR4cGxlZFM4TkxVeXFFQzlQckY2SFNoMHdNY0V4VkxCVlVZQXlrT0hRT2xySE9KeFkzQmREY3pVTmozVVoycVNwaTB1V0hOOXVZN1liWk5Hc1pRRm8?oc=5",
       "related_keywords": [
         "증권",
-        "디에이치엑스컴퍼니",
-        "불성실공시법인지정",
-        "공시번복"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "stock_issue-00920749f32cbf8b23",
-      "type": "stock_issue",
-      "category": "증권",
-      "title": "(코스닥)하이젠알앤엠 - 소속부변경",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)하이젠알앤엠 - 소속부변경’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:29:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900944",
-      "related_keywords": [
-        "증권",
-        "하이젠알앤엠",
-        "소속부변경",
+        "사이드카",
+        "코스피",
         "코스닥"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-060f5daa4e963491a0",
+      "id": "stock_issue-d4de01ba59ebb3e792",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(코스닥)좋은사람들 - [기재정정]주주총회소집결의 (임시주주총회)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)좋은사람들 - [기재정정]주주총회소집결의 (임시주주총회)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "코스피 또 떨어지는데...\"9000 간다, 사라\" 모간스탠리 돌변 이유는 - 머니투데이",
+      "summary": "코스피 또 떨어지는데...\"9000 간다, 사라\" 모간스탠리 돌변 이유는 - 머니투데이 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:25:00+09:00",
+      "importance_score": 90.3,
+      "published_at": "2026-08-03T14:27:50+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900967",
+      "source_name": "머니투데이",
+      "source_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tZnNBS0QyT1JVNjdObG1kZUNMQ0dkMnR5ZkYtMS1UdU9yRkNwNlJnY1dMVWtvYXo4YU5CeWlUMXlpVDQwbU1ZbG8yOUFCMV81dk1NTWtMdGZyNW1aX0hWbGxnSzliSTA20gFuQVVfeXFMTk4xLVlqaDl4T3RQcDFPYW1pcXlxd3FheURJQklzMUpUcjJsX1JUR0VaMFVteFVtMkF1dVNyVEE3LXpNamRKQldkcXE3cnhvU282Q1dlRXdhbzVuVk96a0szcy0xMWpHLWFmdjRObEE?oc=5",
       "related_keywords": [
         "증권",
-        "주주총회소집결의",
-        "임시주주총회",
-        "좋은사람들"
+        "떨어지는데",
+        "모간스탠리",
+        "머니투데이"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-31b3a2fe58b3135cba",
+      "id": "stock_issue-ffc01a3c31daf8bf35",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(코스닥)아미코젠 - [기재정정]경영권변경등에관한계약체결",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)아미코젠 - [기재정정]경영권변경등에관한계약체결’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "속보 급반등 이후 쉬어가기...코스피, 5.1% 하락 마감",
+      "summary": "속보 급반등 이후 쉬어가기...코스피, 5.1% 하락 마감 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:20:00+09:00",
+      "importance_score": 93.0,
+      "published_at": "2026-08-03T15:39:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900966",
+      "source_name": "YTN",
+      "source_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DNHdzTE4zdHNVcjJIdFZ0WnpDclNCN1RkOFNhd09lbUxHZ1VpZ01MT2pfZXFZcHVmUDNjaGVGOV9FTnhCVlU4eTdIOWlUNFBDLWR4Z0hkR05sWFpaLVE?oc=5",
       "related_keywords": [
         "증권",
-        "경영권변경등에관한계약체결",
-        "아미코젠",
-        "기재정정"
+        "쉬어가기",
+        "급반등",
+        "코스피"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-5f5664ec9dcf803209",
+      "id": "stock_issue-4d7a36fb52128c704f",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(코스닥)하이젠알앤엠 - [기재정정]감사보고서제출",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)하이젠알앤엠 - [기재정정]감사보고서제출’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "코스피, 5%대 급락 6,200대 마감…코스닥 2.4%↑",
+      "summary": "코스피, 5%대 급락 6,200대 마감…코스닥 2.4%↑ 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.4,
-      "published_at": "2026-08-04T18:20:00+09:00",
+      "importance_score": 90.5,
+      "published_at": "2026-08-03T15:37:31+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900918",
+      "source_name": "연합뉴스",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TeFBXTzdrNU9rbUx2VnVyZkhNeWF5ckpybUxKMDBnYnVQS1pEV1BqNXFiVy1ZWHlHWGRZa3lBX0U1ajA4MFNxRlZ5UkxXVzN6bldkampCc2ptNjTSAWBBVV95cUxQeGpvVkUyLU4weWRBTkZDelFzTDlRQXRCUnlDNnY5RlZreDA1RXNoanNqZmxCbHlqZXJGUlNSV09yM3djWVVOMmNPTklPZnJueDhnX19zd0lQSlkxZExNUEw?oc=5",
       "related_keywords": [
         "증권",
-        "감사보고서제출",
-        "하이젠알앤엠",
-        "기재정정"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "stock_issue-05f2fc277c50a8d0a3",
-      "type": "stock_issue",
-      "category": "증권",
-      "title": "(코스닥)상보 - 기타시장안내(관리종목지정우려종목) (시가총액 200억원 미달)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)상보 - 기타시장안내(관리종목지정우려종목) (시가총액 200억원 미달)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.3,
-      "published_at": "2026-08-04T18:07:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900942",
-      "related_keywords": [
-        "증권",
-        "관리종목지정우려종목",
-        "기타시장안내",
-        "200억원"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "stock_issue-76dc48c818a27896fc",
-      "type": "stock_issue",
-      "category": "증권",
-      "title": "(코스닥)풍전약품 - 전환가액의조정 (제2회차)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)풍전약품 - 전환가액의조정 (제2회차)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.3,
-      "published_at": "2026-08-04T18:01:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900932",
-      "related_keywords": [
-        "증권",
-        "전환가액의조정",
-        "풍전약품",
-        "제2회차"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "stock_issue-b60e2d380e50adef64",
-      "type": "stock_issue",
-      "category": "증권",
-      "title": "(코스닥)아미코젠 - [기재정정]주요사항보고서(유상증자결정)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)아미코젠 - [기재정정]주요사항보고서(유상증자결정)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.3,
-      "published_at": "2026-08-04T18:01:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804000545",
-      "related_keywords": [
-        "증권",
-        "주요사항보고서",
-        "유상증자결정",
-        "아미코젠"
-      ],
-      "related_companies": [],
-      "schedule_status": null,
-      "source_count": 1,
-      "confidence": 0.92,
-      "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
-    },
-    {
-      "id": "stock_issue-d88692c9792062565c",
-      "type": "stock_issue",
-      "category": "증권",
-      "title": "(코스닥)서진시스템 - 타인에대한채무보증결정",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)서진시스템 - 타인에대한채무보증결정’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
-      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
-      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.3,
-      "published_at": "2026-08-04T17:59:00+09:00",
-      "scheduled_at": null,
-      "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804900924",
-      "related_keywords": [
-        "증권",
-        "타인에대한채무보증결정",
-        "서진시스템",
+        "200대",
+        "코스피",
         "코스닥"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
-      "id": "stock_issue-334694c43f85e3847f",
+      "id": "stock_issue-461064502cad5cd818",
       "type": "stock_issue",
       "category": "증권",
-      "title": "(코스닥)시너지이노베이션 - [기재정정]주요사항보고서(타법인주식및출자증권양도결정)",
-      "summary": "금융감독원 전자공시시스템에 ‘(코스닥)시너지이노베이션 - [기재정정]주요사항보고서(타법인주식및출자증권양도결정)’ 공시가 게시됐습니다. 세부 수치와 조건은 공시 원문에서 확인할 수 있습니다.",
+      "title": "코스피, 폭등 후 다시 하락…코스닥은 매수 사이드카",
+      "summary": "코스피, 폭등 후 다시 하락…코스닥은 매수 사이드카 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
       "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
       "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
-      "importance_score": 95.3,
-      "published_at": "2026-08-04T17:58:00+09:00",
+      "importance_score": 89.9,
+      "published_at": "2026-08-03T12:05:00+09:00",
       "scheduled_at": null,
       "event_time_confirmed": true,
-      "source_name": "금융감독원 DART",
-      "source_url": "https://dart.fss.or.kr/api/link.jsp?rcpNo=20260804000542",
+      "source_name": "연합뉴스TV",
+      "source_url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQWGhXWWtuc2JRVVhQcDdvcTY5eV9qQjZSTms1dmVpX3JISTJia1drS0tvZjd5U3Z2VHp6dWhpWW9aLThGMFBXcnRwVlpfaGR1LUVPYkRJUS1FN2FLRXI5a295OWVQVGc?oc=5",
       "related_keywords": [
         "증권",
-        "타법인주식및출자증권양도결정",
-        "시너지이노베이션",
-        "주요사항보고서"
+        "코스닥은",
+        "사이드카",
+        "코스피"
       ],
       "related_companies": [],
       "schedule_status": null,
       "source_count": 1,
-      "confidence": 0.92,
+      "confidence": 0.82,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "stock_issue-502749c657c78503c8",
+      "type": "stock_issue",
+      "category": "증권",
+      "title": "엇갈린 코스피와 코스닥···5% 하락한 코스피 6,257.45 마감",
+      "summary": "엇갈린 코스피와 코스닥···5% 하락한 코스피 6,257.45 마감 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 90.5,
+      "published_at": "2026-08-03T15:50:42+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "대구MBC",
+      "source_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBnRnhGcUJmY21laDk1V2kySmpRTzNnUnBJZ1BwSGFqcjZENHZ6dnM4OW1wbXpBTnVGaW93ZHY3VXZCN1czc0FZa2hwWDY?oc=5",
+      "related_keywords": [
+        "증권",
+        "코스피와",
+        "엇갈린",
+        "코스닥"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "stock_issue-e502675292f5042118",
+      "type": "stock_issue",
+      "category": "증권",
+      "title": "이 대통령, 귀국 당일 부동산·주식 점검회의 주재한다",
+      "summary": "이 대통령, 귀국 당일 부동산·주식 점검회의 주재한다 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 89.4,
+      "published_at": "2026-08-03T09:44:00+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "한겨레",
+      "source_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5DTVN5LUhOSVRWRm5kNU9zWm4tVVdXdmpBZWtiMGhRaWFHUEV4c1VkQXltTm43UGkydW51TS1iOVlvazFtUHBXNWtJZlppNmtnNDczSkJ4d1JKV01Gd3E1ZUx3M0loRkhuSkpN?oc=5",
+      "related_keywords": [
+        "증권",
+        "점검회의",
+        "주재한다",
+        "대통령"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "stock_issue-648804b4a8cde6831b",
+      "type": "stock_issue",
+      "category": "증권",
+      "title": "모건스탠리 \"레버리지 36만 계좌 청산... 코스피 9000 갈 것\"",
+      "summary": "모건스탠리 \"레버리지 36만 계좌 청산... 코스피 9000 갈 것\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 89.4,
+      "published_at": "2026-08-03T09:40:01+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "조선일보",
+      "source_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNTBwVWpuelNudWZsM2hJODJlOF8yb1lnU21JbEJGaU9BU3JKaXk1S1ZYY2VqM1UtWkE0SXRHZ1VCcWYzRVZXdl81TEFhNDdPVHJ6TXlscDh1OUxBLXJYRU51WWdMLWNLZnBiRHpnUnNqT09WOW1lV3draGxWTGhENw?oc=5",
+      "related_keywords": [
+        "증권",
+        "모건스탠리",
+        "레버리지",
+        "9000"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "stock_issue-c2d239cbf40d5d6a8d",
+      "type": "stock_issue",
+      "category": "증권",
+      "title": "모건스탠리, 韓 주식 비중 확대로 상향…\"코스피 9,000 다시 간다\"",
+      "summary": "모건스탠리, 韓 주식 비중 확대로 상향…\"코스피 9,000 다시 간다\" 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 90.1,
+      "published_at": "2026-08-03T13:12:00+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "연합인포맥스",
+      "source_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBjY2pMNXR5UGpmMVFaazkxbjREOFBQSFlqSTRtdVBGTmstUXJlZm1GZXZRNU0tSHdMMTAtSElha2x0ZmoyelU0aHVPQ2ZlTkFvaGtPd2pEcVJwQm1Pa1pWRmhLUlRhMFdyTnhubnRTaXg?oc=5",
+      "related_keywords": [
+        "증권",
+        "모건스탠리",
+        "확대로",
+        "코스피"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
+    },
+    {
+      "id": "stock_issue-89e6b1228bccd2ebe2",
+      "type": "stock_issue",
+      "category": "증권",
+      "title": "폭등했던 코스피, 차익실현에 하락…코스닥 4~5% 급등",
+      "summary": "폭등했던 코스피, 차익실현에 하락…코스닥 4~5% 급등 관련 소식입니다. 공개된 제목과 게시 시각을 기준으로 정리했으며 세부 내용은 원문에서 확인할 수 있습니다.",
+      "ai_comment": "제목만으로 매매를 판단하지 말고 공시 원문과 거래소 수치를 함께 확인하세요.",
+      "impact": "시장 수급과 투자 심리에 영향을 줄 수 있는 재료입니다.",
+      "importance_score": 89.7,
+      "published_at": "2026-08-03T11:16:05+09:00",
+      "scheduled_at": null,
+      "event_time_confirmed": true,
+      "source_name": "연합뉴스",
+      "source_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sWUtKYTJkNGZ2Zk5WUVJyWF9KcEVONVZ6a29oSHoyRFVOalYxRlVXVDBqT2U0cWpxTG52cE1qcURzUXJqZlNocXRYOUlHek5NRDF3cERBV2FWajjSAWBBVV95cUxNR1g4eV84YkNEYTB2SXJnT1JtRnl4M180S0dXVk9LT2JLeHJEblFzTW5FSHNYZWRMSVRmeUxwbWRhOXpOT19ZaEdwb1prZ2hfR2dFN1RQLVdrSVVYampXWlo?oc=5",
+      "related_keywords": [
+        "증권",
+        "차익실현에",
+        "폭등했던",
+        "코스피"
+      ],
+      "related_companies": [],
+      "schedule_status": null,
+      "source_count": 1,
+      "confidence": 0.82,
+      "is_example": false,
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "stock_calendar-b4cabb3b0aa57e291a",
@@ -7799,8 +7771,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "stock_calendar-9b4ebb8ee2ca09ac8b",
@@ -7827,8 +7799,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "stock_calendar-1735f56ab3b2a5c8e7",
@@ -7855,8 +7827,8 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     },
     {
       "id": "stock_calendar-a4e09e18e51162f307",
@@ -7883,44 +7855,44 @@
       "source_count": 1,
       "confidence": 0.99,
       "is_example": false,
-      "created_at": "2026-08-04T21:53:52+09:00",
-      "updated_at": "2026-08-04T21:53:52+09:00"
+      "created_at": "2026-08-04T22:10:18+09:00",
+      "updated_at": "2026-08-04T22:10:18+09:00"
     }
   ],
   "markets": [
     {
       "symbol": "USDKRW",
       "display_name": "원·달러",
-      "value": 1427.17,
-      "change": -25.99,
-      "change_percent": -1.7885,
+      "value": 1427.77,
+      "change": -25.39,
+      "change_percent": -1.7472,
       "currency": "KRW",
       "market_status": "최근 거래값",
-      "observed_at": "2026-08-04T21:53:55+09:00",
+      "observed_at": "2026-08-04T22:10:17+09:00",
       "source_name": "Yahoo Finance 공개 차트",
       "is_example": false
     },
     {
       "symbol": "JPYKRW",
       "display_name": "엔·원(100엔)",
-      "value": 904.4,
-      "change": 17.61,
-      "change_percent": 1.9858,
+      "value": 904.2,
+      "change": 17.41,
+      "change_percent": 1.9633,
       "currency": "KRW",
       "market_status": "최근 거래값",
-      "observed_at": "2026-08-04T21:49:54+09:00",
+      "observed_at": "2026-08-04T22:09:55+09:00",
       "source_name": "Yahoo Finance 공개 차트",
       "is_example": false
     },
     {
       "symbol": "EURKRW",
       "display_name": "유로·원",
-      "value": 1643.3,
-      "change": -11.13,
-      "change_percent": -0.6727,
+      "value": 1643.1,
+      "change": -11.33,
+      "change_percent": -0.6848,
       "currency": "KRW",
       "market_status": "최근 거래값",
-      "observed_at": "2026-08-04T21:49:54+09:00",
+      "observed_at": "2026-08-04T22:09:55+09:00",
       "source_name": "Yahoo Finance 공개 차트",
       "is_example": false
     },
@@ -7987,36 +7959,36 @@
     {
       "symbol": "WTI",
       "display_name": "국제유가(WTI)",
-      "value": 77.94,
-      "change": -5.65,
-      "change_percent": -6.7592,
+      "value": 77.78,
+      "change": -5.81,
+      "change_percent": -6.9506,
       "currency": "USD",
       "market_status": "최근 거래값",
-      "observed_at": "2026-08-04T21:44:05+09:00",
+      "observed_at": "2026-08-04T22:00:27+09:00",
       "source_name": "Yahoo Finance 공개 차트",
       "is_example": false
     },
     {
       "symbol": "GOLD",
       "display_name": "금",
-      "value": 4136.0,
-      "change": 35.9,
-      "change_percent": 0.8756,
+      "value": 4125.8,
+      "change": 25.7,
+      "change_percent": 0.6268,
       "currency": "USD",
       "market_status": "최근 거래값",
-      "observed_at": "2026-08-04T21:44:05+09:00",
+      "observed_at": "2026-08-04T22:00:27+09:00",
       "source_name": "Yahoo Finance 공개 차트",
       "is_example": false
     },
     {
       "symbol": "BTC",
       "display_name": "비트코인",
-      "value": 90980000.0,
-      "change": 600000.0,
-      "change_percent": 0.6638636866563399,
+      "value": 90999000.0,
+      "change": 619000.0,
+      "change_percent": 0.6848860367337907,
       "currency": "KRW",
       "market_status": "24시간 거래값",
-      "observed_at": "2026-08-04T21:54:07.314000+09:00",
+      "observed_at": "2026-08-04T22:10:23.704000+09:00",
       "source_name": "업비트 공개 시세",
       "is_example": false
     }
@@ -8039,6 +8011,7 @@
     "schedule_news_3": "ok",
     "kostat_schedule": "ok",
     "bok_schedule": "ok",
+    "stock_news_yesterday": "ok",
     "dart_rss": "ok",
     "market_USDKRW": "ok",
     "market_JPYKRW": "ok",

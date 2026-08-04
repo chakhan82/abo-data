@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from collector import (
@@ -83,6 +83,18 @@ class PublishedFeedTests(unittest.TestCase):
         self.assertFalse(feed["is_example"])
         self.assertTrue(all(not item["is_example"] for item in feed["briefings"]))
         self.assertGreaterEqual(len(feed["markets"]), 6)
+        generated_at = datetime.fromisoformat(feed["generated_at"])
+        yesterday = (generated_at - timedelta(days=1)).date()
+        stock_issues = [
+            item for item in feed["briefings"] if item["type"] == "stock_issue"
+        ]
+        self.assertGreaterEqual(len(stock_issues), 4)
+        self.assertTrue(
+            all(
+                datetime.fromisoformat(item["published_at"]).date() == yesterday
+                for item in stock_issues
+            )
+        )
         for category in CATEGORIES[1:]:
             count = sum(
                 item["type"] == "past" and item["category"] == category
