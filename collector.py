@@ -550,7 +550,51 @@ def _find_event_time(
                             candidate_year,
                             candidate_month,
                             day,
-           …385 tokens truncated… str]] = []
+                            tzinfo=SEOUL,
+                        )
+                    except ValueError:
+                        continue
+                    if now <= candidate.replace(hour=12) <= now + timedelta(days=7):
+                        date_value = candidate
+                        break
+
+    if date_value is None:
+        return None
+
+    time_match = re.search(r"(?:(오전|오후)\s*)?(\d{1,2})시(?:\s*(\d{1,2})분)?", title)
+    time_confirmed = time_match is not None
+    if time_match:
+        hour = int(time_match.group(2))
+        minute = int(time_match.group(3) or 0)
+        if time_match.group(1) == "오후" and hour < 12:
+            hour += 12
+        if time_match.group(1) == "오전" and hour == 12:
+            hour = 0
+        date_value = date_value.replace(hour=hour, minute=minute)
+    else:
+        date_value = date_value.replace(hour=12, minute=0)
+
+    if date_value < now or date_value > now + timedelta(days=7):
+        return None
+    return date_value, time_confirmed
+
+
+def _table_rows(document: str) -> list[list[str]]:
+    rows: list[list[str]] = []
+    for raw_row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", document, flags=re.I | re.S):
+        cells = [
+            _clean_html(cell)
+            for cell in re.findall(
+                r"<t[dh]\b[^>]*>(.*?)</t[dh]>", raw_row, flags=re.I | re.S
+            )
+        ]
+        if cells:
+            rows.append(cells)
+    return rows
+
+
+def parse_kostat_schedules(document: str, year: int) -> list[tuple[datetime, str]]:
+    result: list[tuple[datetime, str]] = []
     for cells in _table_rows(document):
         if len(cells) < 3:
             continue
