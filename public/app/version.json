@@ -1,15 +1,16 @@
 {
   "schema_version": 1,
-  "latest_version": "1.5.0",
-  "latest_build": 8,
+  "latest_version": "1.5.1",
+  "latest_build": 9,
   "minimum_supported_build": 1,
   "required": false,
-  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.0/AI-Briefing-On-1.5.0.apk",
-  "sha256": "d24d17dd53ebdd3dd112497b2b67d143c77bf25135e977f36a0e71522eb1d2fc",
+  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-1.5.1.apk",
+  "sha256": "4bf81311f7ab6d9f355f539bcf68bba1cf6ca32f540cd322fdb8ad4be9363168",
   "release_notes": [
-    "선택한 분야 탭의 위치와 포커스 유지",
-    "여성·남성 음색 선택과 실시간 2줄 자막",
-    "30분 갱신 주식 검색어 TOP5와 실시간 인기 주식 뉴스"
+    "실제 TTS 성별 정보를 사용한 남성·여성 음성 선택",
+    "핵심 신호를 자동 압축한 약 3분 음성 브리핑",
+    "주식 검색어 동의어 통합과 보충 자료 안내 강화",
+    "배포 복구 절차와 개인정보 처리 안내 보완"
   ],
-  "published_at": "2026-08-05T10:50:41+09:00"
+  "published_at": "2026-08-05T11:36:16+09:00"
 }

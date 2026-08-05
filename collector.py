@@ -525,6 +525,16 @@ STOCK_KEYWORD_STOPWORDS = {
     "연결재무제표기준영업", "풍문또는보도에대한해명", "미확정", "증권발행결과", "억원",
 }
 
+STOCK_KEYWORD_CANONICAL = {
+    "영업익": "실적",
+    "영업이익": "실적",
+    "순이익": "실적",
+    "이익": "실적",
+    "매출": "실적",
+    "매출액": "실적",
+    "실적발표": "실적",
+}
+
 STOCK_NEWS_SIGNALS = {
     "증시", "주식", "코스피", "코스닥", "공시", "상장", "주가", "실적", "영업익",
     "매출", "순이익", "거래대금", "종목", "투자자", "매수", "매도", "배당", "ipo", "etf",
@@ -553,23 +563,32 @@ def build_stock_keywords(
         seen_in_item: set[str] = set()
         for token in tokens:
             normalized = token.lower().strip(".-")
+            canonical = STOCK_KEYWORD_CANONICAL.get(normalized, normalized)
             if (
-                normalized in seen_in_item
+                canonical in seen_in_item
                 or token in STOCK_KEYWORD_STOPWORDS
-                or len(normalized) < 2
-                or normalized.isdigit()
+                or len(canonical) < 2
+                or canonical.isdigit()
             ):
                 continue
-            seen_in_item.add(normalized)
-            labels.setdefault(normalized, token.upper() if token.isascii() else token)
-            mentions.setdefault(normalized, set()).add(item_id)
-            scores[normalized] = scores.get(normalized, 0.0) + recency * coverage
+            seen_in_item.add(canonical)
+            label = canonical if canonical in STOCK_KEYWORD_CANONICAL.values() else token
+            labels.setdefault(canonical, label.upper() if label.isascii() else label)
+            mentions.setdefault(canonical, set()).add(item_id)
+            scores[canonical] = scores.get(canonical, 0.0) + recency * coverage
 
-    ordered = sorted(
+    candidates = sorted(
         scores,
         key=lambda key: (len(mentions[key]), scores[key], len(labels[key])),
         reverse=True,
-    )[:5]
+    )
+    ordered: list[str] = []
+    for key in candidates:
+        if any(key in selected or selected in key for selected in ordered):
+            continue
+        ordered.append(key)
+        if len(ordered) == 5:
+            break
     return [
         {
             "rank": rank,

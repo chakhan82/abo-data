@@ -45,6 +45,35 @@ class ParserTests(unittest.TestCase):
         self.assertIn(keywords[0]["keyword"], {"삼성전자", "반도체"})
         self.assertGreaterEqual(keywords[0]["mention_count"], 2)
 
+    def test_stock_keyword_synonyms_are_merged(self) -> None:
+        now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
+        items = [
+            {
+                "id": str(index),
+                "title": title,
+                "published_at": (now - timedelta(minutes=index)).isoformat(),
+                "source_count": 1,
+            }
+            for index, title in enumerate(
+                [
+                    "A기업 영업익 증가 실적 발표",
+                    "B기업 순이익 개선",
+                    "C기업 매출 확대",
+                    "코스피 강세",
+                    "반도체 투자 확대",
+                    "바이오 임상 공개",
+                    "환율 안정",
+                ]
+            )
+        ]
+
+        keywords = build_stock_keywords(items, now)
+        labels = [item["keyword"] for item in keywords]
+        self.assertIn("실적", labels)
+        self.assertNotIn("영업익", labels)
+        self.assertNotIn("순이익", labels)
+        self.assertNotIn("매출", labels)
+
     def test_realtime_ranking_rewards_multiple_news_sources(self) -> None:
         now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
 
