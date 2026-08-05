@@ -515,6 +515,73 @@ def _rank_realtime_news(
     return ranked
 
 
+STOCK_KEYWORD_STOPWORDS = {
+    "증권", "주식", "증시", "시장", "국내", "한국", "관련", "대한", "기자",
+    "뉴스", "오늘", "내일", "오는", "발표", "투자", "주가", "거래", "종목",
+    "오전", "오후", "최근", "이번", "지난", "현재", "전망", "분석", "가능성",
+    "가운데", "통해", "위해", "대해", "따르면", "기준", "이후", "하락", "상승",
+    "유가", "급등", "급락", "종합", "공시", "상반기", "분기", "최대", "사상",
+    "달성", "장초반", "나흘째", "시간외", "깜짝", "기업가치제고계획", "자율공시",
+    "연결재무제표기준영업", "풍문또는보도에대한해명", "미확정", "증권발행결과", "억원",
+}
+
+STOCK_NEWS_SIGNALS = {
+    "증시", "주식", "코스피", "코스닥", "공시", "상장", "주가", "실적", "영업익",
+    "매출", "순이익", "거래대금", "종목", "투자자", "매수", "매도", "배당", "ipo", "etf",
+}
+
+
+def _is_stock_headline(title: str) -> bool:
+    normalized = title.lower().replace("비현실적", "").replace("현실적", "")
+    return any(signal in normalized for signal in STOCK_NEWS_SIGNALS)
+
+
+def build_stock_keywords(
+    items: Iterable[dict[str, object]], now: datetime
+) -> list[dict[str, object]]:
+    """Build transparent trending terms from the latest collected stock headlines."""
+    mentions: dict[str, set[str]] = {}
+    scores: dict[str, float] = {}
+    labels: dict[str, str] = {}
+    for item in items:
+        item_id = str(item.get("id") or item.get("source_url") or "")
+        published_at = datetime.fromisoformat(str(item["published_at"]))
+        age_hours = max(0.0, (now - published_at).total_seconds() / 3600)
+        recency = max(0.25, 1.0 - min(age_hours, 168) / 210)
+        coverage = 1.0 + min(int(item.get("source_count") or 1) - 1, 4) * 0.2
+        tokens = re.findall(r"[A-Za-z][A-Za-z0-9&.-]{1,19}|[가-힣]{2,10}", str(item["title"]))
+        seen_in_item: set[str] = set()
+        for token in tokens:
+            normalized = token.lower().strip(".-")
+            if (
+                normalized in seen_in_item
+                or token in STOCK_KEYWORD_STOPWORDS
+                or len(normalized) < 2
+                or normalized.isdigit()
+            ):
+                continue
+            seen_in_item.add(normalized)
+            labels.setdefault(normalized, token.upper() if token.isascii() else token)
+            mentions.setdefault(normalized, set()).add(item_id)
+            scores[normalized] = scores.get(normalized, 0.0) + recency * coverage
+
+    ordered = sorted(
+        scores,
+        key=lambda key: (len(mentions[key]), scores[key], len(labels[key])),
+        reverse=True,
+    )[:5]
+    return [
+        {
+            "rank": rank,
+            "keyword": labels[key],
+            "mention_count": len(mentions[key]),
+            "score": round(scores[key], 2),
+            "updated_at": now.isoformat(),
+        }
+        for rank, key in enumerate(ordered, start=1)
+    ]
+
+
 def _briefing_from_story(
     story: Story,
     *,
@@ -1018,17 +1085,17 @@ def build_feed(
     briefings.extend(upcoming)
 
     stock_issues: list[dict[str, object]] = []
-    today_start = generated_at.replace(hour=0, minute=0, second=0, microsecond=0)
-    yesterday_start = today_start - timedelta(days=1)
+    stock_boundary = generated_at - timedelta(days=7)
     try:
         query = (
-            "(증시 OR 주식 OR 코스피 OR 코스닥 OR 공시) "
-            f"after:{(yesterday_start - timedelta(days=1)).date().isoformat()} "
-            f"before:{yesterday_start.date().isoformat()}"
+            "(증시 OR 주식 OR 코스피 OR 코스닥 OR 공시 OR 상장 OR 실적) when:7d"
         )
         url = GOOGLE_NEWS_URL.format(query=quote_plus(query))
         for story in parse_google_news(client.text(url)):
-            if yesterday_start <= story.published_at < today_start:
+            if (
+                stock_boundary <= story.published_at <= generated_at + timedelta(minutes=10)
+                and _is_stock_headline(story.title)
+            ):
                 stock_issues.append(
                     _briefing_from_story(
                         story,
@@ -1037,48 +1104,67 @@ def build_feed(
                         now=generated_at,
                     )
                 )
-        health["stock_news_yesterday"] = "ok"
+        health["stock_news_realtime"] = "ok"
     except Exception as error:
-        health["stock_news_yesterday"] = f"failed: {type(error).__name__}"
+        health["stock_news_realtime"] = f"failed: {type(error).__name__}"
 
     try:
         dart_items = parse_dart(client.text(DART_RSS_URL), generated_at)
         stock_issues.extend(
             item
             for item in dart_items
-            if yesterday_start
+            if stock_boundary
             <= datetime.fromisoformat(str(item["published_at"]))
-            < today_start
+            <= generated_at + timedelta(minutes=10)
         )
         health["dart_rss"] = "ok"
     except Exception as error:
         health["dart_rss"] = f"failed: {type(error).__name__}"
-    stock_issues = _deduplicate(
-        [
-            *stock_issues,
-            *[
-                {
-                    **item,
-                    "id": _stable_id("stock_issue", str(item["source_url"])),
-                    "type": "stock_issue",
-                }
-                for item in briefings
-                if item.get("type") == "past"
-                and item.get("category") == "증권"
-                and yesterday_start
-                <= datetime.fromisoformat(str(item["published_at"]))
-                < today_start
-            ],
-            *[
-                item
-                for item in _previous_items(previous, "stock_issue")
-                if yesterday_start
-                <= datetime.fromisoformat(str(item["published_at"]))
-                < today_start
-            ],
-        ]
-    )[:12]
+    candidates = [
+        *stock_issues,
+        *[
+            {
+                **item,
+                "id": _stable_id("stock_issue", str(item["source_url"])),
+                "type": "stock_issue",
+            }
+            for item in briefings
+            if item.get("type") == "past"
+            and item.get("category") == "증권"
+            and stock_boundary <= datetime.fromisoformat(str(item["published_at"]))
+        ],
+        *[
+            item
+            for item in _previous_items(previous, "stock_issue")
+            if stock_boundary <= datetime.fromisoformat(str(item["published_at"]))
+        ],
+    ]
+    candidates = [
+        item
+        for item in candidates
+        if "DART" in str(item.get("source_name") or "")
+        or _is_stock_headline(str(item.get("title") or ""))
+    ]
+    ranked_stock = _rank_realtime_news(candidates, generated_at)
+    recent_stock = [
+        item
+        for item in ranked_stock
+        if datetime.fromisoformat(str(item["published_at"]))
+        >= generated_at - timedelta(hours=24)
+    ]
+    older_stock = [item for item in ranked_stock if item not in recent_stock]
+    stock_issues = [*recent_stock, *older_stock][:12]
     briefings.extend(stock_issues)
+
+    stock_keywords = build_stock_keywords(stock_issues, generated_at)
+    if len(stock_keywords) < 5 and previous:
+        current = {str(item["keyword"]).lower() for item in stock_keywords}
+        for item in previous.get("stock_keywords", []):
+            if str(item.get("keyword", "")).lower() in current:
+                continue
+            stock_keywords.append({**item, "rank": len(stock_keywords) + 1})
+            if len(stock_keywords) == 5:
+                break
 
     stock_calendar = [
         _official_schedule_item(
@@ -1173,6 +1259,7 @@ def build_feed(
         "categories": CATEGORIES,
         "briefings": _deduplicate(briefings),
         "markets": markets,
+        "stock_keywords": stock_keywords,
         "source_health": health,
     }
     validate_feed(feed)
@@ -1184,8 +1271,9 @@ def validate_feed(feed: dict[str, Any]) -> None:
         raise ValueError("feed must be schema v1 real data")
     briefings = feed.get("briefings")
     markets = feed.get("markets")
-    if not isinstance(briefings, list) or not isinstance(markets, list):
-        raise ValueError("briefings and markets must be lists")
+    stock_keywords = feed.get("stock_keywords")
+    if not isinstance(briefings, list) or not isinstance(markets, list) or not isinstance(stock_keywords, list):
+        raise ValueError("briefings, markets and stock_keywords must be lists")
     if any(item.get("is_example") for item in briefings + markets):
         raise ValueError("example data cannot enter the production feed")
     if any("example.com" in str(item.get("source_url", "")) for item in briefings):
@@ -1206,6 +1294,8 @@ def validate_feed(feed: dict[str, Any]) -> None:
         raise ValueError("no verified future schedule found")
     if not any(item.get("type") == "stock_issue" for item in briefings):
         raise ValueError("no stock issue found")
+    if len(stock_keywords) < 5:
+        raise ValueError("not enough stock keywords")
     if not any(item.get("type") == "stock_calendar" for item in briefings):
         raise ValueError("no stock calendar found")
 

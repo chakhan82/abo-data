@@ -10,6 +10,7 @@ from collector import (
     SEOUL,
     _find_event_time,
     _rank_realtime_news,
+    build_stock_keywords,
     parse_bok_schedules,
     parse_google_news,
     parse_kostat_schedules,
@@ -19,6 +20,31 @@ from collector import (
 
 
 class ParserTests(unittest.TestCase):
+    def test_stock_keywords_are_ranked_from_recent_headline_mentions(self) -> None:
+        now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
+        items = [
+            {
+                "id": str(index),
+                "title": title,
+                "published_at": (now - timedelta(minutes=index * 10)).isoformat(),
+                "source_count": 1,
+            }
+            for index, title in enumerate(
+                [
+                    "삼성전자 반도체 실적 기대 코스피 강세",
+                    "삼성전자 반도체 투자 확대",
+                    "코스피 반도체 대형주 상승",
+                    "바이오 임상 결과 공개",
+                    "환율 변화 수출주 주목",
+                ]
+            )
+        ]
+        keywords = build_stock_keywords(items, now)
+        self.assertEqual(len(keywords), 5)
+        self.assertEqual(keywords[0]["rank"], 1)
+        self.assertIn(keywords[0]["keyword"], {"삼성전자", "반도체"})
+        self.assertGreaterEqual(keywords[0]["mention_count"], 2)
+
     def test_realtime_ranking_rewards_multiple_news_sources(self) -> None:
         now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
 
@@ -172,16 +198,21 @@ class PublishedFeedTests(unittest.TestCase):
         self.assertTrue(all(not item["is_example"] for item in feed["briefings"]))
         self.assertGreaterEqual(len(feed["markets"]), 6)
         generated_at = datetime.fromisoformat(feed["generated_at"])
-        yesterday = (generated_at - timedelta(days=1)).date()
         stock_issues = [
             item for item in feed["briefings"] if item["type"] == "stock_issue"
         ]
         self.assertGreaterEqual(len(stock_issues), 4)
         self.assertTrue(
             all(
-                datetime.fromisoformat(item["published_at"]).date() == yesterday
+                generated_at - timedelta(days=7)
+                <= datetime.fromisoformat(item["published_at"])
+                <= generated_at
                 for item in stock_issues
             )
+        )
+        self.assertEqual(len(feed["stock_keywords"]), 5)
+        self.assertEqual(
+            [item["rank"] for item in feed["stock_keywords"]], [1, 2, 3, 4, 5]
         )
         for category in CATEGORIES[1:]:
             count = sum(

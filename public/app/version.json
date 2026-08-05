@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "latest_version": "1.4.0",
-  "latest_build": 7,
+  "latest_version": "1.5.0",
+  "latest_build": 8,
   "minimum_supported_build": 1,
   "required": false,
-  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.4.0/AI-Briefing-On-1.4.0.apk",
-  "sha256": "979bbae524cfb7052912348be4da7ac5d38cc6008e0ace34cfca7499255220ba",
+  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.0/AI-Briefing-On-1.5.0.apk",
+  "sha256": "d24d17dd53ebdd3dd112497b2b67d143c77bf25135e977f36a0e71522eb1d2fc",
   "release_notes": [
-    "전체·분야별 실시간 인기 뉴스 TOP4 제공",
-    "최신성·복수 매체 보도·중요도를 합산한 인기 순위",
-    "앱 실행 시 새 버전 자동 확인 및 APK 다운로드 안내"
+    "선택한 분야 탭의 위치와 포커스 유지",
+    "여성·남성 음색 선택과 실시간 2줄 자막",
+    "30분 갱신 주식 검색어 TOP5와 실시간 인기 주식 뉴스"
   ],
-  "published_at": "2026-08-05T10:04:08+09:00"
+  "published_at": "2026-08-05T10:50:41+09:00"
 }

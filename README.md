@@ -1,6 +1,6 @@
 # ABO Data
 
-AI Briefing On Android 앱이 읽는 실제 공개 데이터를 GitHub Pages의 정적 JSON으로 배포합니다. 뉴스는 30분마다 최신성·복수 매체 보도·중요도를 다시 계산해 전체·분야별 실시간 인기 TOP4로 제공합니다.
+AI Briefing On Android 앱이 읽는 실제 공개 데이터를 GitHub Pages의 정적 JSON으로 배포합니다. 뉴스는 30분마다 최신성·복수 매체 보도·중요도를 다시 계산해 전체·분야별 실시간 인기 TOP4로 제공하고, 최신 주식 보도의 검색어 TOP5도 함께 집계합니다.
 
 - `collector.py`: 공개 RSS, 공식 발표 일정, 공개 시장값 수집기
 - `public/data/briefing.json`: 앱이 읽는 단일 JSON
