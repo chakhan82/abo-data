@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "latest_version": "1.5.2",
-  "latest_build": 10,
+  "latest_version": "1.5.3",
+  "latest_build": 11,
   "minimum_supported_build": 1,
   "required": false,
-  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-1.5.2.apk",
-  "sha256": "15d3a1f5ec97ba99b1ee85ea02488845553082b812afd66c528d05fce9778cb4",
-  "windows_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-Windows-1.5.2-Setup.exe",
-  "windows_sha256": "7e6546eaece8976fbba8c202f22e5c9748370c6ac30090a403bb4bfc1cd71b8e",
-  "windows_portable_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-Windows-1.5.2-portable.zip",
-  "windows_portable_sha256": "3569585487b30609d7090848e0860109b9c2c9122acd1c3b95ed63230bbe2a43",
+  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.3/AI-Briefing-On-1.5.3.apk",
+  "sha256": "f3cb113da004cce6a36e49a49005fab8e55d712a71b0c666a4ebde5e08c4c13a",
+  "windows_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.3/AI-Briefing-On-Windows-1.5.3-Setup.exe",
+  "windows_sha256": "cceb2166f8e5aab2968569826a5ea770251c333e960d51e02a3b34c8e30fefc6",
+  "windows_portable_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.3/AI-Briefing-On-Windows-1.5.3-portable.zip",
+  "windows_portable_sha256": "8b950c02d3dab92c09c3405b197f59714f897db696dfcc008922176c3df64520",
   "release_notes": [
-    "금융 등락을 바로 전 거래일 종가 기준으로 정확하게 계산",
-    "금융 카드 글자를 20~25% 확대하고 천 단위 콤마와 방향 화살표 적용",
-    "Windows 기본 창을 640×1200 세로형으로 조정",
-    "Android 백그라운드와 Windows 종료 시 음성 임시 파일 자동 정리"
+    "설정 화면 하단에 문의 이메일과 후원 계좌 안내 추가",
+    "이메일 주소를 누르면 클립보드에 복사",
+    "계좌번호를 누르면 클립보드에 복사",
+    "Android와 Windows 버전에 동일하게 적용"
   ],
-  "published_at": "2026-08-05T15:08:19+09:00"
+  "published_at": "2026-08-05T16:36:00+09:00"
 }
