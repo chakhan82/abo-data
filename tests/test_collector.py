@@ -9,6 +9,7 @@ from collector import (
     CATEGORIES,
     SEOUL,
     _find_event_time,
+    _rank_realtime_news,
     parse_bok_schedules,
     parse_google_news,
     parse_kostat_schedules,
@@ -18,6 +19,35 @@ from collector import (
 
 
 class ParserTests(unittest.TestCase):
+    def test_realtime_ranking_rewards_multiple_news_sources(self) -> None:
+        now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
+
+        def item(item_id: str, title: str, source: str, age_minutes: int) -> dict[str, object]:
+            return {
+                "id": item_id,
+                "type": "past",
+                "category": "경제",
+                "title": title,
+                "summary": "요약",
+                "confidence": 0.92,
+                "published_at": (now - timedelta(minutes=age_minutes)).isoformat(),
+                "source_name": source,
+                "source_count": 1,
+                "importance_score": 80,
+            }
+
+        ranked = _rank_realtime_news(
+            [
+                item("1", "기준금리 인하 결정 시장 영향", "매체A", 20),
+                item("2", "기준금리 인하 결정 금융시장 반응", "매체B", 30),
+                item("3", "신제품 출시 소식", "매체C", 5),
+            ],
+            now,
+        )
+
+        self.assertEqual(ranked[0]["source_count"], 2)
+        self.assertIn("기준금리 인하 결정", str(ranked[0]["title"]))
+
     def test_google_news_keeps_real_source_and_publication_time(self) -> None:
         xml = """<?xml version="1.0" encoding="UTF-8"?>
         <rss><channel><item>

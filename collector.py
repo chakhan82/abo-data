@@ -9,6 +9,7 @@ import time
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Iterable
@@ -403,6 +404,115 @@ def _importance(title: str, published_at: datetime, now: datetime) -> float:
     if any(word in title for word in ("포토", "운세", "화보")):
         score -= 8
     return round(max(55.0, min(99.0, score)), 1)
+
+
+POPULARITY_IGNORED_WORDS = {
+    "관련",
+    "뉴스",
+    "오늘",
+    "내일",
+    "속보",
+    "단독",
+    "종합",
+    "한국",
+    "정부",
+    "기자",
+    "발표",
+    "공개",
+}
+
+
+def _topic_tokens(title: str) -> set[str]:
+    return {
+        token.lower()
+        for token in re.findall(r"[가-힣A-Za-z0-9]+", title)
+        if len(token) >= 2 and token not in POPULARITY_IGNORED_WORDS
+    }
+
+
+def _same_news_topic(left: str, right: str) -> bool:
+    left_normalized = re.sub(r"[^0-9a-z가-힣]", "", left.lower())
+    right_normalized = re.sub(r"[^0-9a-z가-힣]", "", right.lower())
+    if left_normalized == right_normalized:
+        return True
+    left_tokens = _topic_tokens(left)
+    right_tokens = _topic_tokens(right)
+    common = left_tokens & right_tokens
+    if len(common) >= 2 and len(common) / max(1, min(len(left_tokens), len(right_tokens))) >= 0.5:
+        return True
+    return SequenceMatcher(None, left_normalized, right_normalized).ratio() >= 0.68
+
+
+def _realtime_popularity_score(
+    title: str,
+    published_at: datetime,
+    now: datetime,
+    source_count: int,
+) -> float:
+    age_hours = max(0.0, (now - published_at).total_seconds() / 3600)
+    recency_score = max(0.0, 25.0 - age_hours * 0.85)
+    coverage_score = min(12.0, max(0, source_count - 1) * 4.0)
+    signal_score = 0.0
+    if any(word in title for word in ("속보", "확정", "경보", "급등", "급락", "금리", "물가", "실적", "공시", "합의")):
+        signal_score += 4.0
+    if any(word in title for word in ("포토", "운세", "화보")):
+        signal_score -= 10.0
+    return round(max(40.0, min(100.0, 59.0 + recency_score + coverage_score + signal_score)), 1)
+
+
+def _rank_realtime_news(
+    items: Iterable[dict[str, object]], now: datetime
+) -> list[dict[str, object]]:
+    """Cluster the same issue and rank it by recency, coverage and significance."""
+    clusters: list[list[dict[str, object]]] = []
+    ordered = sorted(
+        _deduplicate(items),
+        key=lambda item: str(item.get("published_at") or ""),
+        reverse=True,
+    )
+    for item in ordered:
+        title = str(item["title"])
+        cluster = next(
+            (
+                candidate
+                for candidate in clusters
+                if any(_same_news_topic(title, str(other["title"])) for other in candidate[:4])
+            ),
+            None,
+        )
+        if cluster is None:
+            clusters.append([item])
+        else:
+            cluster.append(item)
+
+    ranked: list[dict[str, object]] = []
+    for cluster in clusters:
+        representative = max(
+            cluster,
+            key=lambda item: (
+                float(item.get("confidence") or 0),
+                str(item.get("published_at") or ""),
+            ),
+        ).copy()
+        sources = {str(item.get("source_name") or "") for item in cluster}
+        inherited_count = max(int(item.get("source_count") or 1) for item in cluster)
+        source_count = max(len(sources - {""}), inherited_count)
+        published_at = datetime.fromisoformat(str(representative["published_at"]))
+        representative["source_count"] = source_count
+        representative["importance_score"] = _realtime_popularity_score(
+            str(representative["title"]), published_at, now, source_count
+        )
+        ranked.append(representative)
+
+    ranked.sort(
+        key=lambda item: (
+            float(item["importance_score"]),
+            int(item.get("source_count") or 1),
+            str(item["published_at"]),
+        ),
+        reverse=True,
+    )
+    return ranked
 
 
 def _briefing_from_story(
@@ -810,15 +920,9 @@ def build_feed(
             <= story.published_at
             <= generated_at + timedelta(minutes=10)
         ]
-        fresh_items.sort(
-            key=lambda item: (
-                float(item["importance_score"]),
-                str(item["published_at"]),
-            ),
-            reverse=True,
-        )
-        combined = _deduplicate(
-            [*fresh_items, *_previous_items(previous, "past", category)]
+        combined = _rank_realtime_news(
+            [*fresh_items, *_previous_items(previous, "past", category)],
+            generated_at,
         )[:24]
         briefings.extend(combined)
 
@@ -1062,7 +1166,7 @@ def build_feed(
         "timezone": "Asia/Seoul",
         "is_example": False,
         "notice": (
-            "공개 RSS·공식 일정·공개 시장 데이터를 자동 정리했습니다. 기사 세부 내용과 일정 변경은 원문에서 다시 확인해 주세요."
+            "공개 RSS의 최신성·복수 매체 보도·중요도를 합산해 실시간 인기 뉴스를 정리했습니다. 기사 세부 내용과 일정 변경은 원문에서 다시 확인해 주세요."
             if failed_sources == 0
             else f"실제 데이터로 구성했으며 {failed_sources}개 공급원은 일시 실패해 이용 가능한 최신 항목만 표시합니다."
         ),

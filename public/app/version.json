@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "latest_version": "1.4.0",
+  "latest_build": 7,
+  "minimum_supported_build": 1,
+  "required": false,
+  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.4.0/AI-Briefing-On-1.4.0.apk",
+  "release_notes": [
+    "전체·분야별 실시간 인기 뉴스 TOP4 제공",
+    "최신성·복수 매체 보도·중요도를 합산한 인기 순위",
+    "앱 실행 시 새 버전 자동 확인 및 APK 다운로드 안내"
+  ],
+  "published_at": "2026-08-05T12:00:00+09:00"
+}
