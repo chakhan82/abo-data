@@ -1,21 +1,20 @@
 {
   "schema_version": 1,
-  "latest_version": "1.5.1",
-  "latest_build": 9,
+  "latest_version": "1.5.2",
+  "latest_build": 10,
   "minimum_supported_build": 1,
   "required": false,
-  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-1.5.1.apk",
-  "sha256": "4bf81311f7ab6d9f355f539bcf68bba1cf6ca32f540cd322fdb8ad4be9363168",
-  "windows_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-Windows-1.5.1-Setup.exe",
-  "windows_sha256": "1835593c55c70f82d4692f3c92803e1f8f9db343840d4dd5b4fb0c3a2c32e6c4",
-  "windows_portable_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-Windows-1.5.1-portable.zip",
-  "windows_portable_sha256": "c18cbecf009f1f0978c055f2f02bb193076a69ce063bcb55a6c59b2a0506def6",
+  "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-1.5.2.apk",
+  "sha256": "15d3a1f5ec97ba99b1ee85ea02488845553082b812afd66c528d05fce9778cb4",
+  "windows_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-Windows-1.5.2-Setup.exe",
+  "windows_sha256": "7e6546eaece8976fbba8c202f22e5c9748370c6ac30090a403bb4bfc1cd71b8e",
+  "windows_portable_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.2/AI-Briefing-On-Windows-1.5.2-portable.zip",
+  "windows_portable_sha256": "3569585487b30609d7090848e0860109b9c2c9122acd1c3b95ed63230bbe2a43",
   "release_notes": [
-    "실제 TTS 성별 정보를 사용한 남성·여성 음성 선택",
-    "핵심 신호를 자동 압축한 약 3분 음성 브리핑",
-    "주식 검색어 동의어 통합과 보충 자료 안내 강화",
-    "배포 복구 절차와 개인정보 처리 안내 보완",
-    "Windows 데스크탑 앱과 설치 프로그램 추가"
+    "금융 등락을 바로 전 거래일 종가 기준으로 정확하게 계산",
+    "금융 카드 글자를 20~25% 확대하고 천 단위 콤마와 방향 화살표 적용",
+    "Windows 기본 창을 640×1200 세로형으로 조정",
+    "Android 백그라운드와 Windows 종료 시 음성 임시 파일 자동 정리"
   ],
-  "published_at": "2026-08-05T11:36:16+09:00"
+  "published_at": "2026-08-05T15:08:19+09:00"
 }

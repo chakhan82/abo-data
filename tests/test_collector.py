@@ -77,7 +77,9 @@ class ParserTests(unittest.TestCase):
     def test_realtime_ranking_rewards_multiple_news_sources(self) -> None:
         now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
 
-        def item(item_id: str, title: str, source: str, age_minutes: int) -> dict[str, object]:
+        def item(
+            item_id: str, title: str, source: str, age_minutes: int
+        ) -> dict[str, object]:
             return {
                 "id": item_id,
                 "type": "past",
@@ -216,6 +218,59 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(market["change"], 10)
         self.assertEqual(market["change_percent"], 10)
         self.assertFalse(market["is_example"])
+
+    def test_market_change_prefers_adjacent_daily_close_over_stale_meta(self) -> None:
+        payload = {
+            "chart": {
+                "result": [
+                    {
+                        "meta": {
+                            "regularMarketPrice": 110,
+                            "chartPreviousClose": 80,
+                            "regularMarketTime": 1785852000,
+                            "marketState": "REGULAR",
+                        },
+                        "timestamp": [1785679200, 1785765600, 1785852000],
+                        "indicators": {"quote": [{"close": [95, 100, 110]}]},
+                    }
+                ]
+            }
+        }
+        market = parse_yahoo_market(
+            payload,
+            symbol="TEST",
+            display_name="테스트",
+            currency="pt",
+            multiplier=1,
+        )
+        self.assertEqual(market["change"], 10)
+        self.assertEqual(market["change_percent"], 10)
+
+    def test_market_change_uses_latest_close_when_current_bar_is_missing(self) -> None:
+        payload = {
+            "chart": {
+                "result": [
+                    {
+                        "meta": {
+                            "regularMarketPrice": 110,
+                            "chartPreviousClose": 80,
+                            "regularMarketTime": 1785852000,
+                        },
+                        "timestamp": [1785679200, 1785765600],
+                        "indicators": {"quote": [{"close": [95, 100]}]},
+                    }
+                ]
+            }
+        }
+        market = parse_yahoo_market(
+            payload,
+            symbol="TEST",
+            display_name="테스트",
+            currency="pt",
+            multiplier=1,
+        )
+        self.assertEqual(market["change"], 10)
+        self.assertEqual(market["change_percent"], 10)
 
 
 class PublishedFeedTests(unittest.TestCase):

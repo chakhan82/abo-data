@@ -438,7 +438,10 @@ def _same_news_topic(left: str, right: str) -> bool:
     left_tokens = _topic_tokens(left)
     right_tokens = _topic_tokens(right)
     common = left_tokens & right_tokens
-    if len(common) >= 2 and len(common) / max(1, min(len(left_tokens), len(right_tokens))) >= 0.5:
+    if (
+        len(common) >= 2
+        and len(common) / max(1, min(len(left_tokens), len(right_tokens))) >= 0.5
+    ):
         return True
     return SequenceMatcher(None, left_normalized, right_normalized).ratio() >= 0.68
 
@@ -453,11 +456,27 @@ def _realtime_popularity_score(
     recency_score = max(0.0, 25.0 - age_hours * 0.85)
     coverage_score = min(12.0, max(0, source_count - 1) * 4.0)
     signal_score = 0.0
-    if any(word in title for word in ("속보", "확정", "경보", "급등", "급락", "금리", "물가", "실적", "공시", "합의")):
+    if any(
+        word in title
+        for word in (
+            "속보",
+            "확정",
+            "경보",
+            "급등",
+            "급락",
+            "금리",
+            "물가",
+            "실적",
+            "공시",
+            "합의",
+        )
+    ):
         signal_score += 4.0
     if any(word in title for word in ("포토", "운세", "화보")):
         signal_score -= 10.0
-    return round(max(40.0, min(100.0, 59.0 + recency_score + coverage_score + signal_score)), 1)
+    return round(
+        max(40.0, min(100.0, 59.0 + recency_score + coverage_score + signal_score)), 1
+    )
 
 
 def _rank_realtime_news(
@@ -476,7 +495,10 @@ def _rank_realtime_news(
             (
                 candidate
                 for candidate in clusters
-                if any(_same_news_topic(title, str(other["title"])) for other in candidate[:4])
+                if any(
+                    _same_news_topic(title, str(other["title"]))
+                    for other in candidate[:4]
+                )
             ),
             None,
         )
@@ -516,13 +538,63 @@ def _rank_realtime_news(
 
 
 STOCK_KEYWORD_STOPWORDS = {
-    "증권", "주식", "증시", "시장", "국내", "한국", "관련", "대한", "기자",
-    "뉴스", "오늘", "내일", "오는", "발표", "투자", "주가", "거래", "종목",
-    "오전", "오후", "최근", "이번", "지난", "현재", "전망", "분석", "가능성",
-    "가운데", "통해", "위해", "대해", "따르면", "기준", "이후", "하락", "상승",
-    "유가", "급등", "급락", "종합", "공시", "상반기", "분기", "최대", "사상",
-    "달성", "장초반", "나흘째", "시간외", "깜짝", "기업가치제고계획", "자율공시",
-    "연결재무제표기준영업", "풍문또는보도에대한해명", "미확정", "증권발행결과", "억원",
+    "증권",
+    "주식",
+    "증시",
+    "시장",
+    "국내",
+    "한국",
+    "관련",
+    "대한",
+    "기자",
+    "뉴스",
+    "오늘",
+    "내일",
+    "오는",
+    "발표",
+    "투자",
+    "주가",
+    "거래",
+    "종목",
+    "오전",
+    "오후",
+    "최근",
+    "이번",
+    "지난",
+    "현재",
+    "전망",
+    "분석",
+    "가능성",
+    "가운데",
+    "통해",
+    "위해",
+    "대해",
+    "따르면",
+    "기준",
+    "이후",
+    "하락",
+    "상승",
+    "유가",
+    "급등",
+    "급락",
+    "종합",
+    "공시",
+    "상반기",
+    "분기",
+    "최대",
+    "사상",
+    "달성",
+    "장초반",
+    "나흘째",
+    "시간외",
+    "깜짝",
+    "기업가치제고계획",
+    "자율공시",
+    "연결재무제표기준영업",
+    "풍문또는보도에대한해명",
+    "미확정",
+    "증권발행결과",
+    "억원",
 }
 
 STOCK_KEYWORD_CANONICAL = {
@@ -536,8 +608,25 @@ STOCK_KEYWORD_CANONICAL = {
 }
 
 STOCK_NEWS_SIGNALS = {
-    "증시", "주식", "코스피", "코스닥", "공시", "상장", "주가", "실적", "영업익",
-    "매출", "순이익", "거래대금", "종목", "투자자", "매수", "매도", "배당", "ipo", "etf",
+    "증시",
+    "주식",
+    "코스피",
+    "코스닥",
+    "공시",
+    "상장",
+    "주가",
+    "실적",
+    "영업익",
+    "매출",
+    "순이익",
+    "거래대금",
+    "종목",
+    "투자자",
+    "매수",
+    "매도",
+    "배당",
+    "ipo",
+    "etf",
 }
 
 
@@ -559,7 +648,9 @@ def build_stock_keywords(
         age_hours = max(0.0, (now - published_at).total_seconds() / 3600)
         recency = max(0.25, 1.0 - min(age_hours, 168) / 210)
         coverage = 1.0 + min(int(item.get("source_count") or 1) - 1, 4) * 0.2
-        tokens = re.findall(r"[A-Za-z][A-Za-z0-9&.-]{1,19}|[가-힣]{2,10}", str(item["title"]))
+        tokens = re.findall(
+            r"[A-Za-z][A-Za-z0-9&.-]{1,19}|[가-힣]{2,10}", str(item["title"])
+        )
         seen_in_item: set[str] = set()
         for token in tokens:
             normalized = token.lower().strip(".-")
@@ -572,7 +663,9 @@ def build_stock_keywords(
             ):
                 continue
             seen_in_item.add(canonical)
-            label = canonical if canonical in STOCK_KEYWORD_CANONICAL.values() else token
+            label = (
+                canonical if canonical in STOCK_KEYWORD_CANONICAL.values() else token
+            )
             labels.setdefault(canonical, label.upper() if label.isascii() else label)
             mentions.setdefault(canonical, set()).add(item_id)
             scores[canonical] = scores.get(canonical, 0.0) + recency * coverage
@@ -896,21 +989,32 @@ def parse_yahoo_market(
     result = payload["chart"]["result"][0]
     meta = result["meta"]
     current = float(meta.get("regularMarketPrice") or 0) * multiplier
-    previous = (
-        float(meta.get("previousClose") or meta.get("chartPreviousClose") or 0)
-        * multiplier
-    )
-    if not current or not previous:
-        closes = [
-            float(value) * multiplier
-            for value in result.get("indicators", {})
-            .get("quote", [{}])[0]
-            .get("close", [])
-            if value is not None
-        ]
-        if len(closes) < 2:
-            raise CollectionError(f"market value unavailable: {symbol}")
+    closes = [
+        float(value) * multiplier
+        for value in result.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+        if value is not None
+    ]
+
+    # Yahoo's chartPreviousClose can point to the first day immediately before
+    # the requested range rather than the previous trading session. This is
+    # especially visible on fast-moving indices and produces implausible daily
+    # changes. Prefer the adjacent daily close returned by the chart series.
+    previous = 0.0
+    if current and len(closes) >= 2:
+        latest_close = closes[-1]
+        tolerance = max(abs(current) * 0.001, 0.0001)
+        previous = (
+            closes[-2] if abs(latest_close - current) <= tolerance else latest_close
+        )
+    elif len(closes) >= 2:
         previous, current = closes[-2], closes[-1]
+    else:
+        previous = (
+            float(meta.get("previousClose") or meta.get("chartPreviousClose") or 0)
+            * multiplier
+        )
+    if not current or not previous:
+        raise CollectionError(f"market value unavailable: {symbol}")
     change = current - previous
     observed = datetime.fromtimestamp(
         int(meta.get("regularMarketTime") or result["timestamp"][-1]), timezone.utc
@@ -1106,15 +1210,12 @@ def build_feed(
     stock_issues: list[dict[str, object]] = []
     stock_boundary = generated_at - timedelta(days=7)
     try:
-        query = (
-            "(증시 OR 주식 OR 코스피 OR 코스닥 OR 공시 OR 상장 OR 실적) when:7d"
-        )
+        query = "(증시 OR 주식 OR 코스피 OR 코스닥 OR 공시 OR 상장 OR 실적) when:7d"
         url = GOOGLE_NEWS_URL.format(query=quote_plus(query))
         for story in parse_google_news(client.text(url)):
-            if (
-                stock_boundary <= story.published_at <= generated_at + timedelta(minutes=10)
-                and _is_stock_headline(story.title)
-            ):
+            if stock_boundary <= story.published_at <= generated_at + timedelta(
+                minutes=10
+            ) and _is_stock_headline(story.title):
                 stock_issues.append(
                     _briefing_from_story(
                         story,
@@ -1291,7 +1392,11 @@ def validate_feed(feed: dict[str, Any]) -> None:
     briefings = feed.get("briefings")
     markets = feed.get("markets")
     stock_keywords = feed.get("stock_keywords")
-    if not isinstance(briefings, list) or not isinstance(markets, list) or not isinstance(stock_keywords, list):
+    if (
+        not isinstance(briefings, list)
+        or not isinstance(markets, list)
+        or not isinstance(stock_keywords, list)
+    ):
         raise ValueError("briefings, markets and stock_keywords must be lists")
     if any(item.get("is_example") for item in briefings + markets):
         raise ValueError("example data cannot enter the production feed")
