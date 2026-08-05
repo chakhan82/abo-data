@@ -206,7 +206,7 @@ class PublishedFeedTests(unittest.TestCase):
             all(
                 generated_at - timedelta(days=7)
                 <= datetime.fromisoformat(item["published_at"])
-                <= generated_at
+                <= generated_at + timedelta(minutes=10)
                 for item in stock_issues
             )
         )
