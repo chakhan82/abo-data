@@ -6,11 +6,16 @@
   "required": false,
   "apk_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-1.5.1.apk",
   "sha256": "4bf81311f7ab6d9f355f539bcf68bba1cf6ca32f540cd322fdb8ad4be9363168",
+  "windows_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-Windows-1.5.1-Setup.exe",
+  "windows_sha256": "1835593c55c70f82d4692f3c92803e1f8f9db343840d4dd5b4fb0c3a2c32e6c4",
+  "windows_portable_url": "https://github.com/chakhan82/abo-data/releases/download/v1.5.1/AI-Briefing-On-Windows-1.5.1-portable.zip",
+  "windows_portable_sha256": "c18cbecf009f1f0978c055f2f02bb193076a69ce063bcb55a6c59b2a0506def6",
   "release_notes": [
     "실제 TTS 성별 정보를 사용한 남성·여성 음성 선택",
     "핵심 신호를 자동 압축한 약 3분 음성 브리핑",
     "주식 검색어 동의어 통합과 보충 자료 안내 강화",
-    "배포 복구 절차와 개인정보 처리 안내 보완"
+    "배포 복구 절차와 개인정보 처리 안내 보완",
+    "Windows 데스크탑 앱과 설치 프로그램 추가"
   ],
   "published_at": "2026-08-05T11:36:16+09:00"
 }
