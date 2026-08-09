@@ -24,11 +24,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install widget renderer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes fonts-noto-cjk
+          python -m pip install -r requirements.txt
       - name: Download last successful feed
         continue-on-error: true
         run: curl --fail --silent --show-error https://chakhan82.github.io/abo-data/data/briefing.json -o previous.json
       - name: Generate feed
         run: python collector.py --previous previous.json --output public/data/briefing.json
+      - name: Generate blog widgets
+        run: python widget_renderer.py --input public/data/briefing.json --output public/widgets
       - name: Validate feed
         run: python -m unittest discover -s tests -v
       - uses: actions/configure-pages@v5
