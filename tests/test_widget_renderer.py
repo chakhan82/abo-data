@@ -34,7 +34,7 @@ class WidgetRendererTests(unittest.TestCase):
             "briefings": briefings,
         }
 
-    def test_each_category_gets_a_170_pixel_widget_and_top4_page(self) -> None:
+    def test_each_category_gets_a_170_by_300_widget_and_top4_page(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             feed_path = root / "briefing.json"
@@ -47,7 +47,7 @@ class WidgetRendererTests(unittest.TestCase):
 
             for category in CATEGORIES:
                 with Image.open(output_dir / f"{category.slug}.png") as image:
-                    self.assertEqual(image.size, (170, 170))
+                    self.assertEqual(image.size, (170, 300))
                     self.assertEqual(image.format, "PNG")
                 html = (output_dir / f"{category.slug}.html").read_text(
                     encoding="utf-8"
