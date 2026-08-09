@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 SEOUL = timezone(timedelta(hours=9), name="Asia/Seoul")
@@ -179,7 +179,21 @@ def render_widget_png(
 ) -> None:
     generated_at = _parse_time(feed.get("generated_at")) or datetime.now(SEOUL)
     canvas = Image.new(
-        "RGB", (WIDGET_SIZE[0] * SCALE, WIDGET_SIZE[1] * SCALE), "#F8FAFC"
+        "RGBA", (WIDGET_SIZE[0] * SCALE, WIDGET_SIZE[1] * SCALE), (0, 0, 0, 0)
+    )
+    shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    shadow_draw = ImageDraw.Draw(shadow)
+    shadow_draw.rounded_rectangle(
+        _scaled_box((3, 3, 169, 299)),
+        radius=11 * SCALE,
+        outline=(23, 32, 51, 80),
+        width=2 * SCALE,
+    )
+    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(2 * SCALE)))
+    ImageDraw.Draw(canvas).rounded_rectangle(
+        _scaled_box((4, 4, 165, 295)),
+        radius=8 * SCALE,
+        fill=(0, 0, 0, 0),
     )
     draw = ImageDraw.Draw(canvas)
     regular = _font(9)
@@ -189,10 +203,9 @@ def render_widget_png(
     rank_font = _font(9, bold=True)
 
     draw.rounded_rectangle(
-        _scaled_box((1, 1, 169, 299)),
+        _scaled_box((1, 1, 168, 298)),
         radius=11 * SCALE,
-        fill="#FFFFFF",
-        outline="#D8DEE9",
+        outline=(148, 163, 184, 190),
         width=1 * SCALE,
     )
     draw.rounded_rectangle(
@@ -212,9 +225,12 @@ def render_widget_png(
     for index in range(4):
         top = 39 + index * 59
         bottom = top + 52
-        draw.rounded_rectangle(
-            _scaled_box((7, top, 163, bottom)), radius=7 * SCALE, fill="#F8FAFC"
-        )
+        if index < 3:
+            draw.line(
+                _scaled_box((38, bottom, 159, bottom)),
+                fill=(148, 163, 184, 95),
+                width=1 * SCALE,
+            )
         draw.ellipse(_scaled_box((12, top + 5, 32, top + 25)), fill=category.color)
         rank = str(index + 1)
         rank_box = draw.textbbox((0, 0), rank, font=rank_font)

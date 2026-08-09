@@ -49,6 +49,9 @@ class WidgetRendererTests(unittest.TestCase):
                 with Image.open(output_dir / f"{category.slug}.png") as image:
                     self.assertEqual(image.size, (170, 300))
                     self.assertEqual(image.format, "PNG")
+                    self.assertEqual(image.mode, "RGBA")
+                    self.assertEqual(image.getpixel((0, 0))[3], 0)
+                    self.assertEqual(image.getpixel((8, 70))[3], 0)
                 html = (output_dir / f"{category.slug}.html").read_text(
                     encoding="utf-8"
                 )
