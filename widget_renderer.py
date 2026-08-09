@@ -14,7 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 SEOUL = timezone(timedelta(hours=9), name="Asia/Seoul")
-WIDGET_SIZE = (170, 170)
+WIDGET_SIZE = (170, 300)
 SCALE = 2
 
 
@@ -189,7 +189,7 @@ def render_widget_png(
     rank_font = _font(9, bold=True)
 
     draw.rounded_rectangle(
-        _scaled_box((1, 1, 169, 169)),
+        _scaled_box((1, 1, 169, 299)),
         radius=11 * SCALE,
         fill="#FFFFFF",
         outline="#D8DEE9",
@@ -209,9 +209,9 @@ def render_widget_png(
         fill="#EAF0FF",
     )
 
-    for index in range(2):
-        top = 40 + index * 53
-        bottom = top + 48
+    for index in range(4):
+        top = 39 + index * 59
+        bottom = top + 52
         draw.rounded_rectangle(
             _scaled_box((7, top, 163, bottom)), radius=7 * SCALE, fill="#F8FAFC"
         )
@@ -247,14 +247,14 @@ def render_widget_png(
         meta = f"{source} · {_relative_time(item.get('_published_at'), generated_at)}{coverage}"
         meta_line = _wrap_lines(draw, meta, small, max_width=121, max_lines=1)[0]
         draw.text(
-            (37 * SCALE, (top + 32) * SCALE), meta_line, font=small, fill="#667085"
+            (37 * SCALE, (top + 36) * SCALE), meta_line, font=small, fill="#667085"
         )
 
-    draw.line(_scaled_box((9, 146, 161, 146)), fill="#E5E7EB", width=1 * SCALE)
+    draw.line(_scaled_box((9, 276, 161, 276)), fill="#E5E7EB", width=1 * SCALE)
     footer = "클릭하면 TOP4 자세히 보기"
     footer_width = _text_width(draw, footer, regular)
     draw.text(
-        ((170 * SCALE - footer_width) / 2, 153 * SCALE),
+        ((170 * SCALE - footer_width) / 2, 283 * SCALE),
         footer,
         font=regular,
         fill=category.color,
