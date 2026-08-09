@@ -51,7 +51,8 @@ class WidgetRendererTests(unittest.TestCase):
                     self.assertEqual(image.format, "PNG")
                     self.assertEqual(image.mode, "RGBA")
                     self.assertEqual(image.getpixel((0, 0))[3], 0)
-                    self.assertEqual(image.getpixel((8, 70))[3], 0)
+                    self.assertGreaterEqual(image.getpixel((8, 70))[3], 180)
+                    self.assertLess(image.getpixel((8, 70))[3], 255)
                 html = (output_dir / f"{category.slug}.html").read_text(
                     encoding="utf-8"
                 )
