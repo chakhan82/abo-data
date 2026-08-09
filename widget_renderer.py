@@ -197,14 +197,15 @@ def render_widget_png(
     )
     draw = ImageDraw.Draw(canvas)
     regular = _font(9)
-    small = _font(7)
-    headline = _font(9, bold=True)
+    small = _font(8)
+    headline = _font(10, bold=True)
     header = _font(13, bold=True)
-    rank_font = _font(9, bold=True)
+    rank_font = _font(10, bold=True)
 
     draw.rounded_rectangle(
         _scaled_box((1, 1, 168, 298)),
         radius=11 * SCALE,
+        fill=(255, 255, 255, 190),
         outline=(148, 163, 184, 190),
         width=1 * SCALE,
     )
@@ -225,6 +226,11 @@ def render_widget_png(
     for index in range(4):
         top = 39 + index * 59
         bottom = top + 52
+        draw.rounded_rectangle(
+            _scaled_box((7, top, 163, bottom)),
+            radius=7 * SCALE,
+            fill=(255, 255, 255, 210),
+        )
         if index < 3:
             draw.line(
                 _scaled_box((38, bottom, 159, bottom)),
