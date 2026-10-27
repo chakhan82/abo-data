@@ -39,3 +39,17 @@ https://chakhan82.github.io/abo-data/data/briefing.json
 ```text
 https://chakhan82.github.io/abo-data/app/version.json
 ```
+
+## Cloudflare 30분 보조 호출(선택)
+
+GitHub 예약 실행은 부하 상황에서 지연되거나 누락될 수 있습니다. `cloudflare/worker.mjs`는 공개 JSON의 실제 완료 시각을 확인하고, 50분 이상 지연됐으며 실행 중인 동일 워크플로가 없을 때만 `workflow_dispatch`를 호출합니다. 예제 Cron은 GitHub 예약과 10분 어긋난 매시 17·47분입니다. Cloudflare를 설정하지 않아도 기존 GitHub 예약 수집은 그대로 동작합니다.
+
+필요한 외부 설정은 다음뿐입니다.
+
+1. `cloudflare/wrangler.toml.example`을 Cloudflare Worker 프로젝트의 `wrangler.toml`로 복사합니다.
+2. GitHub fine-grained personal access token을 `chakhan82/abo-data` 저장소 전용으로 만들고 Actions 권한을 `Read and write`로 지정합니다.
+3. `npx wrangler secret put GITHUB_TOKEN`으로 토큰을 저장합니다. 토큰은 파일이나 Git에 기록하지 않습니다.
+4. 선택적으로 장애 알림을 받을 웹훅 주소를 `ALERT_WEBHOOK_URL` secret으로 저장합니다.
+5. `npx wrangler deploy`로 배포합니다.
+
+로컬 Worker 단위 테스트는 `node --test cloudflare/worker.test.mjs`로 실행합니다.
