@@ -31,6 +31,8 @@ class WidgetRendererTests(unittest.TestCase):
                 )
         return {
             "generated_at": "2026-08-09T16:37:00+09:00",
+            "content_updated_at": "2026-08-09T16:07:00+09:00",
+            "collection": {"run_id": "widget-run-10"},
             "briefings": briefings,
         }
 
@@ -59,6 +61,8 @@ class WidgetRendererTests(unittest.TestCase):
                 self.assertIn(f"ABO {category.name} 실시간 인기 뉴스 TOP4", html)
                 self.assertEqual(html.count('class="news-card"'), 4)
                 self.assertIn("&lt;주요 뉴스&gt;", html)
+                self.assertIn('<meta name="abo-run-id" content="widget-run-10">', html)
+                self.assertIn("2026.08.09 16:07 기준", html)
 
     def test_ranking_uses_importance_and_keeps_only_four(self) -> None:
         selected = select_top_news(self._feed(), "경제")
