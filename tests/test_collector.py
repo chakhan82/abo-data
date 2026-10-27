@@ -4,10 +4,14 @@ import json
 import unittest
 from datetime import datetime, timedelta
 from pathlib import Path
+from unittest.mock import patch
 
 from collector import (
     CATEGORIES,
+    CollectionError,
+    HttpClient,
     SEOUL,
+    _finalize_collection,
     _find_event_time,
     _rank_realtime_news,
     build_stock_keywords,
@@ -20,6 +24,119 @@ from collector import (
 
 
 class ParserTests(unittest.TestCase):
+    @patch("collector.time.sleep")
+    @patch("collector.urlopen", side_effect=TimeoutError("timed out"))
+    def test_http_client_stops_after_four_bounded_attempts(
+        self, mocked_urlopen, mocked_sleep
+    ) -> None:
+        client = HttpClient(timeout=0.01, retries=3)
+
+        with self.assertRaises(CollectionError):
+            client.bytes("https://feeds.example.test/news.xml")
+
+        self.assertEqual(mocked_urlopen.call_count, 4)
+        self.assertEqual(mocked_sleep.call_count, 3)
+
+    def test_collection_metadata_marks_reuse_and_preserves_content_time(self) -> None:
+        previous_time = datetime(2026, 10, 27, 9, 7, tzinfo=SEOUL)
+        started = datetime(2026, 10, 27, 9, 37, tzinfo=SEOUL)
+        completed = datetime(2026, 10, 27, 9, 38, tzinfo=SEOUL)
+        item = {
+            "id": "upcoming-sports-1",
+            "type": "upcoming",
+            "category": "스포츠",
+            "title": "대표팀 명단 발표",
+            "summary": "일정 요약",
+            "source_url": "https://news.example.test/1",
+            "scheduled_at": "2026-10-28T12:00:00+09:00",
+            "updated_at": previous_time.isoformat(),
+            "is_example": False,
+        }
+        previous = {
+            "content_updated_at": previous_time.isoformat(),
+            "briefings": [item],
+            "markets": [],
+            "stock_keywords": [],
+        }
+        feed = {
+            "generated_at": started.isoformat(),
+            "content_updated_at": started.isoformat(),
+            "briefings": [
+                {
+                    **item,
+                    "updated_at": started.isoformat(),
+                    "_reused_from": "schedule_스포츠",
+                }
+            ],
+            "markets": [],
+            "stock_keywords": [],
+            "source_health": {"schedule_스포츠": "failed: ValueError"},
+        }
+
+        result = _finalize_collection(
+            feed,
+            previous=previous,
+            started_at=started,
+            completed_at=completed,
+            run_id="12345",
+            trigger="schedule",
+            run_attempt="2",
+        )
+
+        self.assertEqual(result["content_updated_at"], previous_time.isoformat())
+        self.assertEqual(result["briefings"][0]["updated_at"], previous_time.isoformat())
+        self.assertNotIn("_reused_from", result["briefings"][0])
+        self.assertEqual(result["collection"]["run_id"], "12345")
+        self.assertEqual(result["collection"]["completed_at"], completed.isoformat())
+        self.assertTrue(result["collection"]["reused_previous_data"])
+        source = result["collection"]["sources"]["schedule_스포츠"]
+        self.assertEqual(source["status"], "failed")
+        self.assertEqual(source["error_type"], "ValueError")
+        self.assertTrue(source["reused_previous"])
+
+    def test_content_time_changes_when_semantic_content_changes(self) -> None:
+        previous_time = datetime(2026, 10, 27, 9, 7, tzinfo=SEOUL)
+        started = datetime(2026, 10, 27, 9, 37, tzinfo=SEOUL)
+        item = {
+            "id": "past-economy-1",
+            "type": "past",
+            "category": "경제",
+            "title": "기존 제목",
+            "summary": "요약",
+            "source_url": "https://news.example.test/1",
+            "published_at": "2026-10-27T08:00:00+09:00",
+            "updated_at": previous_time.isoformat(),
+            "is_example": False,
+        }
+        previous = {
+            "content_updated_at": previous_time.isoformat(),
+            "briefings": [item],
+            "markets": [],
+            "stock_keywords": [],
+        }
+        feed = {
+            "generated_at": started.isoformat(),
+            "content_updated_at": started.isoformat(),
+            "briefings": [{**item, "title": "변경된 제목", "updated_at": started.isoformat()}],
+            "markets": [],
+            "stock_keywords": [],
+            "source_health": {"news_경제": "ok"},
+        }
+
+        result = _finalize_collection(
+            feed,
+            previous=previous,
+            started_at=started,
+            completed_at=started + timedelta(minutes=1),
+            run_id="12346",
+            trigger="workflow_dispatch",
+            run_attempt="1",
+        )
+
+        self.assertEqual(result["content_updated_at"], started.isoformat())
+        self.assertEqual(result["briefings"][0]["updated_at"], started.isoformat())
+        self.assertFalse(result["collection"]["reused_previous_data"])
+
     def test_stock_keywords_are_ranked_from_recent_headline_mentions(self) -> None:
         now = datetime(2026, 8, 5, 12, tzinfo=SEOUL)
         items = [
