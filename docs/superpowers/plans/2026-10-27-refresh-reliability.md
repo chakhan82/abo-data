@@ -111,4 +111,3 @@
 - [ ] Commit and push the minimal patch to `chakhan82/abo-data`.
 - [ ] Trigger `workflow_dispatch`, wait for build/deploy, then compare the run artifact, public JSON, and all widget hashes/run IDs.
 - [ ] Report run links, observed source failures/reuse, external Cloudflare settings still required, and any residual GitHub scheduling risk.
-

@@ -51,4 +51,3 @@ GitHub Actions 예약 호출 누락과 수집·배포 내부 실패를 분리해
 - 대상 저장소로 한정한 GitHub fine-grained PAT (`Actions: write`)
 - Worker secret `GITHUB_TOKEN`
 - 선택 사항인 지연 알림용 `ALERT_WEBHOOK_URL`
-
