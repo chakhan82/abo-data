@@ -178,6 +178,7 @@ def render_widget_png(
     output_path: Path,
 ) -> None:
     generated_at = _parse_time(feed.get("generated_at")) or datetime.now(SEOUL)
+    content_updated_at = _parse_time(feed.get("content_updated_at")) or generated_at
     canvas = Image.new(
         "RGBA", (WIDGET_SIZE[0] * SCALE, WIDGET_SIZE[1] * SCALE), (0, 0, 0, 0)
     )
@@ -218,7 +219,7 @@ def render_widget_png(
     )
     draw.text(
         (10 * SCALE, 24 * SCALE),
-        f"실시간 인기 뉴스 · {generated_at:%m.%d %H:%M}",
+        f"실시간 인기 뉴스 · {content_updated_at:%m.%d %H:%M}",
         font=small,
         fill="#EAF0FF",
     )
@@ -304,6 +305,8 @@ def render_detail_html(
     output_path: Path,
 ) -> None:
     generated_at = _parse_time(feed.get("generated_at")) or datetime.now(SEOUL)
+    content_updated_at = _parse_time(feed.get("content_updated_at")) or generated_at
+    run_id = html.escape(str(feed.get("collection", {}).get("run_id") or ""), quote=True)
     cards = []
     for index, item in enumerate(items, start=1):
         title = html.escape(str(item.get("title") or "제목 없음"))
@@ -331,6 +334,7 @@ def render_detail_html(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="1800">
+  <meta name="abo-run-id" content="{run_id}">
   <title>ABO {html.escape(category.name)} 실시간 인기 뉴스 TOP4</title>
   <style>
     * {{ box-sizing: border-box; }}
@@ -355,7 +359,7 @@ def render_detail_html(
   <main>
     <header>
       <h1>ABO {html.escape(category.name)} 실시간 인기 뉴스 TOP4</h1>
-      <p>AI가 전하는 오늘의 핵심 브리핑 · {generated_at:%Y.%m.%d %H:%M} 기준</p>
+      <p>AI가 전하는 오늘의 핵심 브리핑 · {content_updated_at:%Y.%m.%d %H:%M} 기준</p>
     </header>
     <section class="news-list">{"".join(cards)}</section>
     <p class="notice">공개된 제목과 게시 시각, 복수 매체 보도 및 중요도를 기준으로 정리합니다. 자세한 내용은 원문에서 확인해 주세요.</p>

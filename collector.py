@@ -4,7 +4,9 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
+import sys
 import time
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
@@ -226,7 +228,7 @@ class CollectionError(RuntimeError):
 
 
 class HttpClient:
-    def __init__(self, timeout: float = 18.0, retries: int = 2) -> None:
+    def __init__(self, timeout: float = 18.0, retries: int = 3) -> None:
         self.timeout = timeout
         self.retries = retries
 
@@ -253,7 +255,13 @@ class HttpClient:
             except Exception as error:  # network errors vary across runners
                 last_error = error
                 if attempt < self.retries:
-                    time.sleep(0.5 * (attempt + 1))
+                    delay = min(4.0, 0.5 * (2**attempt))
+                    print(
+                        f"HTTP retry {attempt + 1}/{self.retries} for {url}: "
+                        f"{type(error).__name__}",
+                        file=sys.stderr,
+                    )
+                    time.sleep(delay)
         raise CollectionError(f"{url}: {last_error}")
 
 
@@ -1061,13 +1069,153 @@ def _previous_items(
 ) -> list[dict[str, object]]:
     if not previous:
         return []
-    return [
+    items = [
         item
         for item in previous.get("briefings", [])
         if item.get("type") == item_type
         and (category is None or item.get("category") == category)
         and not item.get("is_example", False)
     ]
+    tagged: list[dict[str, object]] = []
+    for item in items:
+        item_category = str(item.get("category") or "")
+        if item_type == "past":
+            source_key = f"news_{item_category}"
+        elif item_type == "upcoming":
+            source_key = f"schedule_{item_category}"
+        elif item_type == "stock_issue":
+            source_key = "stock_news_realtime"
+        else:
+            source_key = item_type
+        tagged.append({**item, "_reused_from": source_key})
+    return tagged
+
+
+_SEMANTICALLY_VOLATILE_FIELDS = {
+    "collection",
+    "content_updated_at",
+    "created_at",
+    "generated_at",
+    "importance_score",
+    "notice",
+    "observed_at",
+    "score",
+    "source_health",
+    "updated_at",
+}
+
+
+def _semantic_value(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {
+            key: _semantic_value(item)
+            for key, item in sorted(value.items())
+            if key not in _SEMANTICALLY_VOLATILE_FIELDS and not key.startswith("_")
+        }
+    if isinstance(value, list):
+        return [_semantic_value(item) for item in value]
+    return value
+
+
+def _same_semantic_content(left: Any, right: Any) -> bool:
+    return _semantic_value(left) == _semantic_value(right)
+
+
+def _preserve_stable_timestamps(
+    feed: dict[str, Any], previous: dict[str, Any] | None
+) -> None:
+    if not previous:
+        return
+    previous_briefings = {
+        str(item.get("id")): item for item in previous.get("briefings", [])
+    }
+    for item in feed.get("briefings", []):
+        old = previous_briefings.get(str(item.get("id")))
+        if old and _same_semantic_content(item, old):
+            for field in ("created_at", "updated_at"):
+                if old.get(field):
+                    item[field] = old[field]
+
+    previous_markets = {
+        str(item.get("symbol")): item for item in previous.get("markets", [])
+    }
+    for item in feed.get("markets", []):
+        old = previous_markets.get(str(item.get("symbol")))
+        if old and _same_semantic_content(item, old) and old.get("observed_at"):
+            item["observed_at"] = old["observed_at"]
+
+    previous_keywords = {
+        str(item.get("keyword")): item for item in previous.get("stock_keywords", [])
+    }
+    for item in feed.get("stock_keywords", []):
+        old = previous_keywords.get(str(item.get("keyword")))
+        if old and _same_semantic_content(item, old) and old.get("updated_at"):
+            item["updated_at"] = old["updated_at"]
+
+
+def _finalize_collection(
+    feed: dict[str, Any],
+    *,
+    previous: dict[str, Any] | None,
+    started_at: datetime,
+    completed_at: datetime,
+    run_id: str,
+    trigger: str,
+    run_attempt: str,
+) -> dict[str, Any]:
+    _preserve_stable_timestamps(feed, previous)
+    reused_sources: set[str] = set()
+    for collection_name in ("briefings", "markets", "stock_keywords"):
+        for item in feed.get(collection_name, []):
+            reused = item.pop("_reused_from", None)
+            if isinstance(reused, str) and reused:
+                reused_sources.add(reused)
+
+    previous_semantic = _semantic_value(
+        {
+            key: (previous or {}).get(key, [])
+            for key in ("categories", "briefings", "markets", "stock_keywords")
+        }
+    )
+    current_semantic = _semantic_value(
+        {
+            key: feed.get(key, [])
+            for key in ("categories", "briefings", "markets", "stock_keywords")
+        }
+    )
+    if previous and current_semantic == previous_semantic:
+        feed["content_updated_at"] = previous.get(
+            "content_updated_at", previous.get("generated_at", started_at.isoformat())
+        )
+    else:
+        feed["content_updated_at"] = started_at.isoformat()
+
+    sources: dict[str, dict[str, object]] = {}
+    for key, value in feed.get("source_health", {}).items():
+        health_value = str(value)
+        failed = health_value.startswith("failed:")
+        sources[str(key)] = {
+            "status": "failed" if failed else "success",
+            "error_type": health_value.split(":", 1)[1].strip() if failed else None,
+            "reused_previous": str(key) in reused_sources,
+        }
+    for key in sorted(reused_sources - set(sources)):
+        sources[key] = {
+            "status": "fallback",
+            "error_type": None,
+            "reused_previous": True,
+        }
+    feed["collection"] = {
+        "run_id": run_id,
+        "run_attempt": run_attempt,
+        "trigger": trigger,
+        "started_at": started_at.isoformat(),
+        "completed_at": completed_at.isoformat(),
+        "previous_generated_at": (previous or {}).get("generated_at"),
+        "reused_previous_data": bool(reused_sources),
+        "sources": sources,
+    }
+    return feed
 
 
 def build_feed(
@@ -1282,7 +1430,13 @@ def build_feed(
         for item in previous.get("stock_keywords", []):
             if str(item.get("keyword", "")).lower() in current:
                 continue
-            stock_keywords.append({**item, "rank": len(stock_keywords) + 1})
+            stock_keywords.append(
+                {
+                    **item,
+                    "rank": len(stock_keywords) + 1,
+                    "_reused_from": "stock_keywords",
+                }
+            )
             if len(stock_keywords) == 5:
                 break
 
@@ -1359,7 +1513,7 @@ def build_feed(
     }
     current_symbols = {item["symbol"] for item in markets}
     markets.extend(
-        item
+        {**item, "_reused_from": f"market_{symbol}"}
         for symbol, item in previous_markets.items()
         if symbol not in current_symbols
     )
@@ -1382,6 +1536,17 @@ def build_feed(
         "stock_keywords": stock_keywords,
         "source_health": health,
     }
+    completed_at = datetime.now(SEOUL).replace(microsecond=0)
+    _finalize_collection(
+        feed,
+        previous=previous,
+        started_at=generated_at,
+        completed_at=completed_at,
+        run_id=os.environ.get("GITHUB_RUN_ID")
+        or f"local-{generated_at:%Y%m%dT%H%M%S%z}",
+        trigger=os.environ.get("GITHUB_EVENT_NAME", "local"),
+        run_attempt=os.environ.get("GITHUB_RUN_ATTEMPT", "1"),
+    )
     validate_feed(feed)
     return feed
 

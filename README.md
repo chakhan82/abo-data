@@ -19,7 +19,9 @@ AI Briefing On Android 앱이 읽는 실제 공개 데이터를 GitHub Pages의 
 
 ## 장애 처리
 
-워크플로는 수집 전에 현재 Pages 피드를 내려받습니다. 일부 공급원이 실패하면 이용 가능한 최신 실제 항목을 보충하되 예시값이나 가짜 일정을 만들지 않습니다. 검증을 통과하지 못한 실행은 배포되지 않으므로 Pages에는 마지막 정상 데이터가 유지됩니다.
+워크플로는 수집 전에 현재 Pages 피드를 내려받습니다. 일부 공급원이 실패하면 이용 가능한 최신 실제 항목을 보충하되 예시값이나 가짜 일정을 만들지 않습니다. `collection`에는 실행 ID, 시작·완료 시각, 공급원별 성공 여부와 이전 데이터 재사용 여부가 기록됩니다. 재사용된 내용이 동일하면 `content_updated_at`을 새 시각으로 덮어쓰지 않습니다.
+
+한국어 위젯 폰트는 GitHub Actions 캐시에 보관하고, 모든 네트워크 다운로드에는 재시도와 제한시간을 둡니다. 실행이 겹치면 진행 중인 배포를 취소하지 않고 다음 실행이 기다립니다. 배포 후에는 `deployment-manifest.json`의 실행 ID와 공개 JSON·위젯의 SHA-256을 비교하므로, 예약 호출이나 Pages 배포 단계가 성공했더라도 실제 공개 파일이 바뀌지 않으면 워크플로가 실패합니다.
 
 ## 로컬 실행
 
@@ -37,3 +39,17 @@ https://chakhan82.github.io/abo-data/data/briefing.json
 ```text
 https://chakhan82.github.io/abo-data/app/version.json
 ```
+
+## Cloudflare 30분 보조 호출(선택)
+
+GitHub 예약 실행은 부하 상황에서 지연되거나 누락될 수 있습니다. `cloudflare/worker.mjs`는 공개 JSON의 실제 완료 시각을 확인하고, 50분 이상 지연됐으며 실행 중인 동일 워크플로가 없을 때만 `workflow_dispatch`를 호출합니다. 예제 Cron은 GitHub 예약과 10분 어긋난 매시 17·47분입니다. Cloudflare를 설정하지 않아도 기존 GitHub 예약 수집은 그대로 동작합니다.
+
+필요한 외부 설정은 다음뿐입니다.
+
+1. `cloudflare/wrangler.toml.example`을 Cloudflare Worker 프로젝트의 `wrangler.toml`로 복사합니다.
+2. GitHub fine-grained personal access token을 `chakhan82/abo-data` 저장소 전용으로 만들고 Actions 권한을 `Read and write`로 지정합니다.
+3. `npx wrangler secret put GITHUB_TOKEN`으로 토큰을 저장합니다. 토큰은 파일이나 Git에 기록하지 않습니다.
+4. 선택적으로 장애 알림을 받을 웹훅 주소를 `ALERT_WEBHOOK_URL` secret으로 저장합니다.
+5. `npx wrangler deploy`로 배포합니다.
+
+로컬 Worker 단위 테스트는 `node --test cloudflare/worker.test.mjs`로 실행합니다.

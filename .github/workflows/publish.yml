@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -24,20 +24,50 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install widget renderer dependencies
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Cache Korean widget fonts
+        id: font-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/abo-fonts
+          key: noto-cjk-f8d157532fbfaeda587e826d4cd5b21a49186f7c
+      - name: Download Korean widget fonts
+        if: steps.font-cache.outputs.cache-hit != 'true'
         run: |
-          sudo apt-get update
-          sudo apt-get install --yes fonts-noto-cjk
-          python -m pip install -r requirements.txt
+          TASK_FONT_DIR="$HOME/.cache/abo-fonts"
+          TASK_FONT_BASE="https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/OTC"
+          mkdir -p "$TASK_FONT_DIR"
+          curl --fail --location --silent --show-error --retry 4 --retry-all-errors --connect-timeout 10 --max-time 120 \
+            "$TASK_FONT_BASE/NotoSansCJK-Regular.ttc" -o "$TASK_FONT_DIR/NotoSansCJK-Regular.ttc"
+          curl --fail --location --silent --show-error --retry 4 --retry-all-errors --connect-timeout 10 --max-time 120 \
+            "$TASK_FONT_BASE/NotoSansCJK-Bold.ttc" -o "$TASK_FONT_DIR/NotoSansCJK-Bold.ttc"
+          echo "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a  $TASK_FONT_DIR/NotoSansCJK-Regular.ttc" | sha256sum --check
+          echo "faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb  $TASK_FONT_DIR/NotoSansCJK-Bold.ttc" | sha256sum --check
+      - name: Install widget renderer dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
       - name: Download last successful feed
         continue-on-error: true
-        run: curl --fail --silent --show-error https://chakhan82.github.io/abo-data/data/briefing.json -o previous.json
+        run: |
+          curl --fail --location --silent --show-error --retry 4 --retry-all-errors --connect-timeout 10 --max-time 60 \
+            "https://chakhan82.github.io/abo-data/data/briefing.json?previous=${GITHUB_RUN_ID}" -o previous.json
       - name: Generate feed
         run: python collector.py --previous previous.json --output public/data/briefing.json
       - name: Generate blog widgets
+        env:
+          ABO_WIDGET_FONT: /home/runner/.cache/abo-fonts/NotoSansCJK-Regular.ttc
+          ABO_WIDGET_FONT_BOLD: /home/runner/.cache/abo-fonts/NotoSansCJK-Bold.ttc
         run: python widget_renderer.py --input public/data/briefing.json --output public/widgets
       - name: Validate feed
         run: python -m unittest discover -s tests -v
+      - name: Build deployment manifest
+        run: python deployment_verifier.py build --public-dir public --run-id "${GITHUB_RUN_ID}"
+      - name: Save deployment verification manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployment-verification-${{ github.run_id }}
+          path: public/deployment-manifest.json
+          retention-days: 1
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -50,6 +80,27 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download expected deployment manifest
+        uses: actions/download-artifact@v4
+        with:
+          name: deployment-verification-${{ github.run_id }}
+          path: verification
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify published Pages files
+        run: |
+          for TASK_ATTEMPT in {1..12}; do
+            if python deployment_verifier.py verify \
+              --base-url "${{ steps.deployment.outputs.page_url }}" \
+              --manifest verification/deployment-manifest.json; then
+              exit 0
+            fi
+            echo "Pages has not converged yet (attempt ${TASK_ATTEMPT}/12)."
+            sleep 10
+          done
+          exit 1
